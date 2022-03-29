@@ -1,3 +1,13 @@
+:root{
+    --dark-blue-color:#0065FC;
+    --light-blue-color:#DEEBFF;
+    --light-grey-color:#f2f2f2;
+    --middle-grey-color:#999;
+    --plain-white-color:#FFF;
+    --extralight-grey-color:#f2f2f2;
+    --shadow-grey-color:#DDD;
+}
+
 /* fonts */
 @font-face {
     font-family: 'Raleway-Light';
@@ -41,26 +51,26 @@
 
 /* Utils */
 .bg-grey-concrete{
-    background-color: #f2f2f2;
+    background-color: var(--light-grey-color);
 }
 
 .blue-ribbon{ 
-    color : #0065FC;
+    color : var(--dark-blue-color);
 }
 .blue-pattens{
-    color: #DEEBFF ;
+    color: var(--light-blue-color) ;
 }
 
 /* Star checked */
 .fa-star{
-    color:#DEEBFF;
+    color:var(--light-blue-color);
 }
 .fa-star.checked{
-    color:#0065FC;
+    color:var(--dark-blue-color);
 }
 .fa-solid.fa-info{
-    color:#0065FC;
-    border:1px solid #999;
+    color:var(--dark-blue-color);
+    border:1px solid var(--middle-grey-color);
     border-radius: 15px;
     line-height: 26px;
     width: 30px;
@@ -80,7 +90,7 @@ h1{
 }
 
 body{
-    background-color: #FFF;
+    background-color: var(--plain-white-color);
     width: 100%;
     font-family: "Raleway-Light";
 }
@@ -132,12 +142,12 @@ ul{
 }
 
 .on{
-    border-top:2px solid #0065FC;
-    color:#0065FC;
+    border-top:2px solid var(--dark-blue-color);
+    color:var(--dark-blue-color);
 }
 
 .off{
-    border-top:2px solid white;
+    border-top:2px solid var(--plain-white-color);
 }
 
 /* Recherche */
@@ -145,7 +155,7 @@ ul{
     width: 355px;
     border-radius: 20px;
     line-height: 45px;
-    background-color: #f2f2f2;
+    background-color: var(--extralight-grey-color);
     margin-bottom: 35px;;
 }
 .search i{
@@ -154,18 +164,18 @@ ul{
 }
 .input-field{
     height:43px;
-    background-color: #FFF;
+    background-color: var(--plain-white-color);
     text-align: center;
     
 }
 .recherche-bt{
     padding-left:20px;
     padding-right:20px;
-    color:#FFF;
+    color:var(--plain-white-color);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     line-height: 45px;
-    background-color: #0065FC;
+    background-color: var(--dark-blue-color);
     margin-left:-2px;
 }
 /* fin Recherche */
@@ -191,8 +201,8 @@ ul{
 
 .filters li i{
     margin-top: -2px;
-    color:#0065FC;
-    background-color: #DEEBFF;
+    color:var(--dark-blue-color);
+    background-color: var(--light-grey-color);
     height:52px;
     width:52px;
     line-height: 52px;
@@ -200,8 +210,6 @@ ul{
     margin-right:15px;
     border-radius: 50px;
 }
-
-
 
 .card p{
     line-height: 25px;
@@ -239,7 +247,6 @@ h3, footer li{
 
 /* Hébergement */
 .hebergement{
-    max-width:880px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -247,11 +254,11 @@ h3, footer li{
 }
 
 .hebergement .card{
-    width: 245px;
-    padding:5px;
+    width: calc(100% / 3 - 20px);
+    padding: 5px;
     background-color: #FFF;
     border-radius: 20px;
-    box-shadow: 0px 5px 15px 5px #DDD;
+    box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
 }
 
 .hebergement .card img{
@@ -278,9 +285,9 @@ h3, footer li{
 .popular .card{
     width: 345px;
     padding:5px;
-    background-color: #FFF;
+    background-color: var(--plain-white-color);
     border-radius: 20px;
-    box-shadow: 0px 5px 15px 5px #DDD;
+    box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
     display: flex;
 }
 .popular .description{
@@ -315,7 +322,7 @@ h3, footer li{
     justify-content: space-between;
     gap:40px;
     margin-bottom : 60px;
-    max-width:1440px;
+    max-width:100%;
 }
 
 .activity .column{
@@ -323,14 +330,14 @@ h3, footer li{
     flex-direction: column;
     gap:40px;
     justify-content: space-between;
-    width: 300px;
+    width:calc(100% /4 - 40px)
 }
 
 .activity .card{
     object-fit: contain;
-    background-color: #FFF;
+    background-color: var(--plain-white-color);
     border-radius: 20px;
-    box-shadow: 0px 5px 15px 5px #DDD;
+    box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;   
