@@ -14,7 +14,7 @@
 
 /* fonts */
 @font-face {
-    font-family: var(--fonts-raleway-light);
+    font-family: "Raleway-Light";
     src:url('../fonts/Raleway-Light/Raleway-Light.woff') format('woff'),
             url('../fonts/Raleway-Light/Raleway-Light.woff2') format('woff2'),
             url('../fonts/Raleway-Light/Raleway-Light.svg#Raleway-Light') format('svg'),
@@ -27,7 +27,7 @@
 }
 
 @font-face {
-    font-family: var(--fonts-raleway-bold);
+    font-family: "Raleway-Bold";
     src:url('../fonts/Raleway-Bold/Raleway-Bold.woff') format('woff'),
             url('../fonts/Raleway-Bold/Raleway-Bold.woff2') format('woff2'),
             url('../fonts/Raleway-Bold/Raleway-Bold.svg#Raleway-Bold') format('svg'),
@@ -96,7 +96,7 @@ h1{
 body{
     background-color: var(--plain-white-color);
     width: 100%;
-    font-family: "Raleway-Light";
+    font-family: var(--fonts-raleway-light);
 }
 
 h1{
