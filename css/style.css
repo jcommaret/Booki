@@ -157,6 +157,7 @@ h3, footer li{
     line-height: 45px;
     background-color: var(--light-grey-color);
     margin-bottom: 35px;;
+    font-family: var(--fonts-raleway-bold);
 }
 
 .search i{
