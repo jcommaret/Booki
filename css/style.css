@@ -147,7 +147,8 @@ h3, footer li{
     color:white;
 }
 #form-search .input-field{
-    border: 1px solid #999;
+    font-family: var(--fonts-raleway-bold);
+    text-align: left;
 }
 
 #form-search .text-input{
