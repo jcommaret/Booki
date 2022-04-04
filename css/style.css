@@ -183,7 +183,8 @@ h3, footer li{
     }
     .filters{
         display: flex;
-        height: 50px;
+        flex-direction: column;
+       
         margin-bottom:35px;
         font-family: var(--fonts-raleway-bold);
     }
@@ -195,6 +196,7 @@ h3, footer li{
         margin-top:-2px;
         text-align: center;
         padding-right:15px;
+        line-height: 52px;
     }
     .filters li i{
         margin-top: -2px;
@@ -249,7 +251,12 @@ h3, footer li{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
+    h2{
+        padding:20px;
+        
+    }
     .activity{
+        padding:20px;
         display: flex;
         justify-content: space-between;
         gap:20px;
@@ -260,11 +267,10 @@ h3, footer li{
     footer{
         display: flex;
         flex-direction: column;
+        margin-left: 20px;
     }
     main{
         margin-top: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .activity .card{
         object-fit: contain;
