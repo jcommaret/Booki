@@ -210,7 +210,7 @@ h3, footer li{
         flex-direction: column;
         margin-bottom:35px;
         font-family: var(--fonts-raleway-bold);
-        overflow: scroll;
+        
         line-height: 52px;
     }
     .filters li{
