@@ -26,28 +26,34 @@
         </header>
 
         <main class="content">                 
+            <div class="padding-box">
+                <p>Trouvez votre Hébergement pour des vacances de rêves</p>
+                <p>En plein centre ville ou en pleine nature</p>
             
-            <p>Trouvez votre Hébergement pour des vacances de rêves</p>
-            <p>En plein centre ville ou en pleine nature</p>
-            
-            <div class="search">
+                
                 <form id="form-search">
                     <!--Recherche-->
                     <i class="fas fa-map-marker-alt"></i>
-                    <input class="input-field r-b" type="text" placeholder="Marseille, France">
-                    <input type="submit" class="recherche-bt" value="Rechercher">
+                    <input class="input-field" type="text" placeholder="Marseille, France">
+                        
+                    <button type="submit" class="recherche-bt">
+                        <p class="off-desktop"><i class="fa-solid fa-search"></i></p>
+                        <p class="off-mobile">Recherche</p>
+                    </button>
+                    
                 </form>
-            </div>
+            
+                <h3>Filtres</h3>
+                
+                <div class="filters">
+                    <li><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
+                    <li><i class="fa-solid fa-child"></i>Famillial</li>
+                    <li><i class="fa-solid fa-heart"></i>Romantique</li>
+                    <li><i class="fa-solid fa-dog"></i>Animaux Autorisés</li>
+                </div>
         
-            <h3>Filtres</h3>
-            <ul class="filters">
-                <li><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
-                <li><i class="fa-solid fa-heart"></i>Romantique</li>
-                <li><i class="fa-solid fa-child"></i>Famillial</li>
-                <li><i class="fa-solid fa-dog"></i>Animaux Autorisés</li>
-            </ul>
-    
-            <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+                <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+            </div>
             
             <div class="row">
                 <div class="hebergement box">

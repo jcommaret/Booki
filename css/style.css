@@ -56,8 +56,8 @@
     font-size: var(--font-medium);
     padding-left:10px;
     padding-bottom: 10px;
+    margin-right: 10px;
 }
-
 body{
     width: 100%;
     background-color: var(--plain-white-color);
@@ -137,6 +137,23 @@ h3, footer li{
     font-size: var(--font-small);
 }
 
+#form-search i{
+    line-height: 45px;
+    background-color: var(--dark-blue-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+}
+#form-search .input-field{
+    border: 1px solid #999;
+}
+
+#form-search .text-input{
+    background-color: var(--plain-white-color) ;
+}
+
 /* Mobile*/
 
 @media screen and (max-width: 992px) {
@@ -159,7 +176,12 @@ h3, footer li{
     h2{ 
         line-height: 90px;
     }
-    
+    .search{
+        width: 355px;
+    }
+    .padding-box{
+        padding:20px;
+    }
     .menu {
         display: flex;    
         align-items: center;
@@ -182,11 +204,13 @@ h3, footer li{
         color:var(--dark-blue-color);
     }
     .filters{
+        padding:5px;
         display: flex;
         flex-direction: column;
-       
         margin-bottom:35px;
         font-family: var(--fonts-raleway-bold);
+        overflow: scroll;
+        line-height: 52px;
     }
     .filters li{
         display: flex;
@@ -197,6 +221,7 @@ h3, footer li{
         text-align: center;
         padding-right:15px;
         line-height: 52px;
+        width: calc(100%/2);
     }
     .filters li i{
         margin-top: -2px;
@@ -259,7 +284,7 @@ h3, footer li{
         padding:20px;
         display: flex;
         justify-content: space-between;
-        gap:20px;
+        gap:0px;
         margin-bottom : 60px;
         max-width:100%;
     }
@@ -279,9 +304,15 @@ h3, footer li{
         flex-wrap: wrap;   
         margin-top: 20px;   
     }
+    .off-mobile{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 992px) {
+    .off-desktop{
+        display: none;
+    }
     h2{ 
         line-height: 90px;
     }
@@ -439,6 +470,9 @@ h3, footer li{
         display: flex;
         justify-content: space-between;
         width:1024px;
+    }
+    .column-foot{
+        margin-top: 20px;
     }
 }
 
