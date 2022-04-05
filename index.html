@@ -4,17 +4,22 @@
   <title>Booki</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!--communs-->
   <link rel="stylesheet" href="css/reset.css">
-  <!--Creer un fichier commun, et un ficher desktop / mobile + tablet ()-->
-  <!--(avec max width)-->
+  <link rel="stylesheet" href="css/common.css">
   
-  <link rel="stylesheet" href="css/style.css">
+  <!--Media queries-->
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+  <link rel="stylesheet" media="screen and (max-width: 992px)" href="css/tablette.css" />
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/desktop.css" />
+  
+  <!--Font Awesome import-->
   <script src="https://kit.fontawesome.com/a4a67ad27f.js" crossorigin="anonymous"></script>
-
 </head>
+
 <body>
     <div class="wrapper">
-        
+        <!--Header-->
         <header>
             <nav class="navbar">
                 <a class="logo" href="#">
@@ -25,8 +30,7 @@
                     <li><a class="active" href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                 </ul>
-            </nav>
-        
+            </nav>  
         </header>
 
         <main class="content">                 
@@ -48,12 +52,12 @@
             
                 <h3>Filtres</h3>
                 
-                <div class="filters">
+                <ul class="filters">
                     <li><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
                     <li><i class="fa-solid fa-child"></i>Famillial</li>
                     <li><i class="fa-solid fa-heart"></i>Romantique</li>
                     <li><i class="fa-solid fa-dog"></i>Animaux Autorisés</li>
-                </div>
+                </ul>
         
                 <i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
             </div>

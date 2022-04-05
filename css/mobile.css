@@ -1,0 +1,150 @@
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo{
+    height: 55px;;
+}
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+h2{ 
+    line-height: 90px;
+}
+.search{
+    width: 355px;
+}
+.padding-box{
+    padding:20px;
+}
+.menu {
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    width: calc(100%/2);
+}
+
+.menu a{    
+    height: 55px;
+    text-align: center;
+    display: block;
+    line-height: 55px;
+}
+
+.menu li a.active{
+    border-bottom:2px solid var(--dark-blue-color);
+    color:var(--dark-blue-color);
+}
+.filters{
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:35px;
+    font-family: var(--fonts-raleway-bold);
+    
+    line-height: 52px;
+}
+.filters li{
+    display: flex;
+    margin-left: 5px;
+    border-radius: 50px;
+    border:2px solid #d8d8d8;
+    margin-top:-2px;
+    text-align: center;
+    padding-right:15px;
+    line-height: 52px;
+    width: calc(100%/2);
+}
+.filters li i{
+    margin-top: -2px;
+    color:var(--dark-blue-color);
+    background-color: var(--light-grey-color);
+    height:52px;
+    width:52px;
+    line-height: 52px;
+    margin-left: -2px;
+    margin-right:15px;
+    border-radius: 50px;
+}
+.row{
+    width: 100%;
+    display:flex;
+    gap:40px;
+    flex-direction: column-reverse;
+} 
+.box{
+    border-radius: 0px;
+} 
+.popular img{
+    width: 110px;
+    height:110px;
+}  
+.card p, .rating{
+    margin-left: 0px;
+}
+.hosting{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:30px;
+}
+.hosting .card{
+    width: calc(100% - 20px);
+    padding: 5px;
+}
+.activity{
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+}
+.activity .column{
+    width: 100%;
+}
+.activity img{
+    object-fit: cover;
+    object-position: center;
+    height: 115px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+h2{
+    padding:20px;
+    
+}
+.activity{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    gap:0px;
+    margin-bottom : 60px;
+    max-width:100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+main{
+    margin-top: 30px;
+}
+.activity .card{
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    margin-top: 20px;   
+}
+.off-mobile{
+    display: none;
+}
