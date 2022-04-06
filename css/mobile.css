@@ -1,3 +1,5 @@
+
+
 header .navbar{
     display: flex;
     flex-direction: column;
@@ -6,7 +8,6 @@ header .navbar{
 .logo{
     height: 55px;;
 }
-
 .logo img {
     display: block;
     margin-left: auto;
@@ -17,12 +18,14 @@ header .navbar{
 h2{ 
     line-height: 90px;
 }
+
+.content img{
+    width: 100%;
+}
 .search{
     width: 355px;
 }
-.padding-box{
-    padding:20px;
-}
+
 .menu {
     display: flex;    
     align-items: center;
@@ -117,10 +120,7 @@ h2{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-h2{
-    padding:20px;
-    
-}
+
 .activity{
     padding:20px;
     display: flex;
@@ -129,15 +129,6 @@ h2{
     margin-bottom : 60px;
     max-width:100%;
 }
-
-footer{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-main{
-    margin-top: 30px;
-}
 .activity .card{
     object-fit: contain;
     display: flex;
@@ -145,6 +136,35 @@ main{
     flex-wrap: wrap;   
     margin-top: 20px;   
 }
-.off-mobile{
-    display: none;
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.card{
+    background-color: var(--plain-white-color);
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
+}
+
+.card img{
+    object-fit: cover;
+}
+
+.card p{
+    line-height: 25px;
+}
+
+.card .rating{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 }
