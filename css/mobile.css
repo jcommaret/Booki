@@ -14,6 +14,15 @@
     --font-large: 24px;
 }
 
+.card{
+    background-color: var(--plain-white-color);
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
+}
+.card img{
+    object-fit: cover;
+}
+
 .off-mobile{
     display: none;
 }
@@ -57,6 +66,9 @@ header .menu a{
 header .menu li a.active{
     border-bottom:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
+}
+header .menu li a{
+    border-bottom:2px solid var(--light-grey-color);
 }
 
 .affinity{
@@ -195,6 +207,10 @@ main.content .popular h2{
     margin-bottom: 25px;
 }
 
+main.content .popular h2 i{ 
+    float: right;
+}
+
 main.content .popular .card{
     padding: 5px;
     height: 120px;
@@ -231,77 +247,87 @@ main.content .hosting .card .description{
     font-size: var(--font-xsmall);
     justify-content: space-between;
     padding-bottom: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 main.content .hosting img{
     padding:5px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    height: 98px;
+    height: 105px;
 }   
 
 main.content .hosting{
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: var(--font-xsmall);
-    gap:30px;
+    gap:10px;
 }
 
 main.content .hebergement.box{
     background-color: var(--plain-white-color);
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
+main.content .hebergement .see-more{
+    margin-top:40px;
+    font-family: var(--fonts-raleway-bold);
+}
 
-main .activity{
+main.content .activity{
     display: flex;
     flex-direction: column;
-    padding:5px;
+    padding:20px;
+}
+main.content .activity h2{
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
-.activity .column{
+main.content .activity .column{
     width: 100%;
 }
-.activity img{
-    object-fit: cover;
-    object-position: center;
-    height: 115px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
 
-main .activity{
-    padding:20px;
-    display: flex;
-    justify-content: space-between;
-    gap:0px;
-    margin-bottom : 60px;
-    max-width:100%;
-}
-main .activity .card{
+main.content .activity .card{
     object-fit: contain;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;   
     margin-top: 20px;   
+    height: 160px;
 }
 
-
-.card{
-    background-color: var(--plain-white-color);
-    border-radius: 20px;
-    box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
-}
-.card img{
+main.content .activity .card img{
     object-fit: cover;
+    object-position: center;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main.content .activity .card p{
+    margin-top:20px;
+    margin-left:10px;
 }
 
 footer{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    padding: 20px;
+    background-color: var(--light-grey-color);
+}
+
+footer h3{
+    font-size: var(--font-small);
+}
+footer ul{
+    margin-top: 10px;
+    margin-bottom:15px;
+    font-size: var(--font-xsmall);
+}
+footer ul li {
+    line-height: 25px;
 }
