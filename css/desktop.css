@@ -1,12 +1,5 @@
 :root{
-    --dark-blue-color:#0065FC;
-    --light-blue-color:#DEEBFF;
-    --light-grey-color:#f2f2f2;
-    --middle-grey-color:#999;
-    --plain-white-color:#FFF;
-    --shadow-grey-color:#DDD;
-    --fonts-raleway-light: "Raleway-Light";
-    --fonts-raleway-bold: "Raleway-Bold";
+    --font-xsmall: 14px;
     --font-small: 18px;
     --font-medium: 20px;
     --font-large: 24px;
@@ -14,29 +7,6 @@
 
 .off-desktop{
     display: none;
-}
-
-.card{
-    background-color: var(--plain-white-color);
-    border-radius: 20px;
-    box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
-}
-
-.card img{
-    object-fit: cover;
-}
-
-.card p{
-    line-height: 25px;
-}
-
-.card .rating{
-    font-size: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.card p, .rating{
-    margin-left: 10px;
 }
 
 .navbar{
@@ -215,12 +185,13 @@ main.content .hosting {
 
 main.content .hosting .card{
     padding: 5px;
+    width: calc(100%/3 - 20px);
 }
 
 main.content .hosting .card img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 235px;
+    width:100%;
     object-position: center;
     height: 115px;
 }
@@ -235,8 +206,6 @@ main.content .see-more{
 main.content .popular {
     padding: 45px;
 }
-
-
 
 main.content .activity .card img {
     background-position: center;
@@ -253,8 +222,8 @@ main.content .activity .card p {
 
 main.content .box{
     border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
     background-color: var(--light-grey-color);
 }
 
@@ -299,11 +268,8 @@ main.content .popular .description{
     width: 200px;
 }
 
-
-
-
 main.content .activity{
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 main.content .activity h2{
