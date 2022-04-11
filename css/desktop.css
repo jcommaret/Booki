@@ -105,6 +105,11 @@ header .logo img {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+.affinity .submit-bt:hover{
+    background-color: var(--plain-white-color);
+    color:var(--dark-blue-color);
+    border : 1px solid var(--dark-blue-color);
+}
 
 .affinity .filters{
     display: flex;
@@ -133,6 +138,10 @@ header .logo img {
     color:var(--dark-blue-color);
     background-color: var(--light-blue-color);
     border-radius: 50px;
+}
+.affinity .filters li i:hover{
+    color:var(--light-blue-color);
+    background-color: var(--dark-blue-color);
 }
 
 .affinity .filters li{

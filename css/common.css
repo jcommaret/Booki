@@ -105,3 +105,10 @@ h3{
     font-family: var(--fonts-raleway-bold);
     font-size: var(--font-small);
 }
+
+.navbar .menu li a:hover{
+    border-top:2px solid var(--dark-blue-color);
+    color:var(--plain-white-color);
+    background-color: var(--dark-blue-color);
+}
+
