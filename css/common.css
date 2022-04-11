@@ -49,9 +49,6 @@
     object-fit: cover;
 }
 
-.card p{
-    line-height: 25px;
-}
 
 .card .rating{
     font-size: 10px;
