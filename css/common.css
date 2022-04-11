@@ -111,4 +111,6 @@ h3{
     color:var(--plain-white-color);
     background-color: var(--dark-blue-color);
 }
-
+.navbar .menu li a.active:hover{
+    color:var(--plain-white-color);
+}

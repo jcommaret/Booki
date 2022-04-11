@@ -139,7 +139,7 @@ header .logo img {
     background-color: var(--light-blue-color);
     border-radius: 50px;
 }
-.affinity .filters li i:hover{
+.affinity .filters li:hover i{
     color:var(--light-blue-color);
     background-color: var(--dark-blue-color);
 }
@@ -153,6 +153,11 @@ header .logo img {
     text-align: center;
     height:50px;
     padding-right: 20px;
+}
+.affinity .filters li:hover{
+    border:2px solid var(--light-blue-color);
+    color:var(--dark-blue-color);
+    background-color: var(--light-blue-color);
 }
 
 .affinity .filters li p{
