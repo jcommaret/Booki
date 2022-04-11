@@ -8,12 +8,23 @@
 .off-desktop{
     display: none;
 }
-
+.card p{
+    line-height: 25px;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+header .logo img {
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50px;
+}
+
 
 .navbar .logo {
     margin-top: 15px;
