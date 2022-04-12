@@ -249,8 +249,9 @@ main.content .row{
     gap:40px;
 }
 
-main.content .popular i{
-    float:right;
+main.content .popular h2{
+   display: flex;
+   justify-content: space-between;
 }
 
 main.content .popular .cards{

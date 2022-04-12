@@ -81,6 +81,9 @@ h2{
     font-family: var(--fonts-raleway-bold);
     font-size: var(--font-medium);
 }
+h2 i.fa-star.fa-star.checked{
+    color:#000;
+}
 
 h3{
     font-family: var(--fonts-raleway-bold);

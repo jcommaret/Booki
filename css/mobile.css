@@ -196,10 +196,8 @@ main.content .popular .cards{
 main.content .popular h2{
     margin-top: 30px;
     margin-bottom: 25px;
-}
-
-main.content .popular h2 i{ 
-    float: right;
+    display: flex;
+    justify-content: space-between;
 }
 
 main.content .popular .card{
