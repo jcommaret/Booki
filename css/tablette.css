@@ -320,7 +320,7 @@ main.content .activity .column{
     display:flex;
     flex-direction: column;
     gap:40px;
-    justify-content: space-between;
+    
     width:calc(100% /4 - 40px)
 }
 
@@ -355,12 +355,14 @@ footer{
     background-color: var(--light-grey-color);
 }
 
-
-footer{
+footer .inner-foot{
     display: flex;
-    flex-direction: column;
-    padding-left: 50px;
-    background-color: var(--light-grey-color);
+    justify-content: space-between;
+}
+
+.column-foot{
+    margin-top: 20px;
+    margin-right:150px;
 }
 
 footer h3{

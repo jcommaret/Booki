@@ -8,9 +8,6 @@
 .off-desktop{
     display: none;
 }
-.card p{
-    line-height: 25px;
-}
 
 .navbar{
     display: flex;
@@ -242,7 +239,8 @@ main.content .activity .card img {
 }
 
 main.content .activity .card p {
-    line-height:55px;
+    padding-top:15px;
+    padding-bottom: 15px;
     padding-left:5px;
 }
 
@@ -329,8 +327,8 @@ main.content .activity .card img {
 main.content .activity .column{
     display:flex;
     flex-direction: column;
-    gap:40px;
-    justify-content: space-between;
+    gap:45px;
+   
     width:calc(100% /4 - 40px)
 }
 
@@ -375,8 +373,9 @@ footer{
 footer .inner-foot{
     display: flex;
     justify-content: space-between;
-    width:1024px;
 }
+
 .column-foot{
     margin-top: 20px;
+    margin-right:150px;
 }
