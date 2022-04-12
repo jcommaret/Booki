@@ -1,3 +1,7 @@
+.wrapper{
+    all:unset;
+}
+
 :root{
     --font-xsmall: 12px;
     --font-small: 14px;
