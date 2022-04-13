@@ -200,6 +200,7 @@ main.content .hosting {
 
 main.content .hosting .card{
     padding: 5px;
+    min-width: 230px;
     width: calc(100%/3 - 20px);
 }
 

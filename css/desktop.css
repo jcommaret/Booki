@@ -208,7 +208,7 @@ main.content .hosting {
 
 main.content .hosting .card{
     padding: 5px;
-    min-width: 150px;
+    min-width: 230px;
     width: calc(100%/3 - 20px);
 }
 
@@ -218,6 +218,12 @@ main.content .hosting .card img{
     width:100%;
     object-position: center;
     height: 115px;
+}
+main.content .hosting .description{
+    display:flex;
+    flex-direction: column;
+    height:70px;
+    justify-content: space-between;
 }
 
 main.content .see-more{
