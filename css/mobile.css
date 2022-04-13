@@ -18,6 +18,7 @@ header .navbar{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: initial;
 }
 
 header .logo{
@@ -204,7 +205,7 @@ main.content .popular h2{
     justify-content: space-between;
 }
 
-main.content .popular .card{
+main.content .popular article{
     padding: 5px;
     height: 120px;
     margin-bottom: 5px;
@@ -219,7 +220,7 @@ main.content .popular img{
     margin-right:10px;
 }
 
-main.content .popular .card .description{
+main.content .popular article .description{
     height: 110px;
     display: flex;
     flex-direction: column;
@@ -227,15 +228,15 @@ main.content .popular .card .description{
     justify-content: space-between;
 }
 
-main.content .popular .card p:first-of-type{
+main.content .popular article p:first-of-type{
     margin-bottom: 5px;
 }
 
-main.content .hosting .card{
+main.content .hosting article{
     height: 168px;
 }
 
-main.content .hosting .card .description{
+main.content .hosting article .description{
     height: 60px;
     display: flex;
     flex-direction: column;
@@ -287,7 +288,7 @@ main.content .activity .column{
     width: 100%;
 }
 
-main.content .activity .card{
+main.content .activity article{
     object-fit: contain;
     display: flex;
     flex-direction: column;
@@ -296,7 +297,7 @@ main.content .activity .card{
     height: 160px;
 }
 
-main.content .activity .card img{
+main.content .activity article img{
     object-fit: cover;
     object-position: center;
     height: 100px;
@@ -304,7 +305,7 @@ main.content .activity .card img{
     border-top-right-radius: 20px;
 }
 
-main.content .activity .card p{
+main.content .activity article p{
     margin-top:20px;
     margin-left:10px;
 }

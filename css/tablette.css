@@ -6,14 +6,13 @@
     --font-large: 24px;
 }
 
-
-.card{
+article{
     background-color: var(--plain-white-color);
     border-radius: 20px;
     box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
 }
 
-.card img{
+article img{
     object-fit: cover;
 }
 
@@ -198,13 +197,13 @@ main.content .hosting {
     gap:18px;
 }
 
-main.content .hosting .card{
+main.content .hosting article{
     padding: 5px;
     min-width: 230px;
     width: calc(100%/3 - 20px);
 }
 
-main.content .hosting .card img{
+main.content .hosting article img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width:100%;
@@ -223,7 +222,7 @@ main.content .popular {
     padding: 45px;
 }
 
-main.content .activity .card img {
+main.content .activity article img {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -231,7 +230,7 @@ main.content .activity .card img {
     border-top-right-radius: 20px;
 }
 
-main.content .activity .card p {
+main.content .activity article p {
     padding-left:5px;
     padding-top:15px;
     padding-bottom: 15px;
@@ -263,7 +262,7 @@ main.content .popular .cards{
     margin-top: 25px;
 }
 
-main.content .popular .card{
+main.content .popular article{
     
     padding:5px;
     display: flex;
@@ -303,14 +302,14 @@ main.content .activity .act{
     max-width:100%;    
 } 
 
-main.content .activity .card{
+main.content .activity article{
     object-fit: contain;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;   
 }
 
-main.content .activity .card img {
+main.content .activity article img {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
@@ -326,27 +325,27 @@ main.content .activity .column{
     width:calc(100% /4 - 40px)
 }
 
-main.content .activity .card.one img{
+main.content .activity article.one img{
     height:390px;
 }
 
-main.content .activity .card.two img{
+main.content .activity article.two img{
     height:180px;
 }
 
-main.content .activity .card.three img{
+main.content .activity article.three img{
     height:110px;
 }
 
-main.content .activity .card.four img{
+main.content .activity article.four img{
     height:390px;
 }
 
-main.content .activity .card.five img{
+main.content .activity article.five img{
     height:140px;
 }
 
-main.content .activity .card.six img{
+main.content .activity article.six img{
     height:140px;
 }
 

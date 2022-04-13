@@ -36,23 +36,23 @@
     --fonts-raleway-bold: "Raleway-Bold";
 }
 
-.card{
+article{
     background-color: var(--plain-white-color);
     border-radius: 20px;
     box-shadow: 0px 5px 15px 5px var(--shadow-grey-color);
 }
 
-.card img{
+article img{
     object-fit: cover;
 }
 
 
-.card .rating{
+article .rating{
     font-size: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.card p, .rating{
+article p, .rating{
     margin-left: 10px;
 }
 
@@ -101,7 +101,7 @@ h3{
     font-size: var(--font-medium);
 }
 
-.card p:first-of-type {
+article p:first-of-type {
     font-family: var(--fonts-raleway-bold);
     font-size: var(--font-small);
 }
