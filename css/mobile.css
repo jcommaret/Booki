@@ -21,11 +21,13 @@ header .navbar{
     align-items: initial;
 }
 
-header .logo{
+header .navbar .logo{
     height:65px;
+    margin-top: initial;
+    margin-left:initial;
 }
 
-header .logo img {
+header .navbar .logo img {
     margin-top: 25px;
     display: block;
     margin-left: auto;
@@ -34,54 +36,57 @@ header .logo img {
 
 }
 
-header .menu {
+header .navbar .menu {
+    
     display: flex;    
     align-items: center;
     justify-content: center;
 }
 
-header .menu li {
+header .navbar .menu li {
     width: calc(100%/2);
     font-size: var(--font-small);
 }
 
-header .menu a{    
+header .navbar .menu a{
+    width: initial;
     height: 48px;
     text-align: center;
     display: block;
     line-height: 48px;
 }
 
-header .menu li a.active{
+header .navbar .menu li a.active{
+    border-top:initial;
     border-bottom:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
 }
 
-header .menu li a{
+header .navbar .menu li a{
     border-bottom:2px solid var(--light-grey-color);
 }
 
-.affinity{
+header .affinity{
     padding:17px;
 }
 
-.affinity .site-description p:first-of-type{
+header .affinity .site-description p:first-of-type{
     margin-top: 7px;
     font-size: var(--font-medium);
 }
 
-.affinity .site-description :last-child{
+header .affinity .site-description :last-child{
     font-size: var(--font-small);
     margin-top:15px;
 }
 
-.affinity .search form{
+header.affinity .search form{
     margin-top: 30px;
     font-family: var(--fonts-raleway-bold);
     display: flex;
 }
 
-.affinity .search i{
+header .affinity .search i{
     padding-top:13px;
     padding-bottom: 13px;
     padding-left: 15px;
@@ -89,33 +94,46 @@ header .menu li a{
 
 }
 
-.affinity .search i.fa-map-marker-alt{
+header .affinity .search i.fa-map-marker-alt{
     background-color: var(--light-grey-color);
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
 }
 
-.affinity .search i.fa-search{
+header .affinity .search i.fa-search{
     color:var(--plain-white-color);
     border-radius:15px;
     background-color: var(--dark-blue-color);
 }
 
-.affinity .search .input-field{
+header .affinity .search .input-field{
     font-size: var(--font-normal);
     border:2px solid var(--light-grey-color);
     padding-left: 15px;
     width: 100%;
 }
-.affinity .submit-bt{
+header .affinity .submit-bt{
     margin-left: -20px;
+    background-color: initial;
+    color: initial;
+    padding-left: initial;
+    padding-right: initial;
+    border-top-right-radius: initial;
+    border-bottom-right-radius: initial;
+}
+header .affinity .submit-bt:hover{
+    background-color: initial;
+    color:initial;
+    border : initial;
 }
 
-.affinity .filters{
+header .affinity .filters{
     margin-top: 30px;
+    display: initial;
+    height: initial;
 }
 
-.affinity .filters ul{
+header .affinity .filters ul{
     display: flex;
     flex-wrap: wrap;
     gap:10px;
@@ -125,7 +143,7 @@ header .menu li a{
     
 }
 
-.affinity .filters li i{
+header .affinity .filters li i{
     height: 42px;
     width: 42px;
     line-height: 42px;
@@ -137,7 +155,7 @@ header .menu li a{
     border-radius: 50px;
 }
 
-.affinity .filters li{
+header .affinity .filters li{
     display: flex;
     border-radius: 50px;
     border:2px solid #d8d8d8;
@@ -148,18 +166,18 @@ header .menu li a{
     padding-right: 10px;
 }
 
-.affinity .filters li p{
+header .affinity .filters li p{
     padding-top:12px;
     padding-left: 4px;
 }
 
-.affinity .search-results{
+header .affinity .search-results{
     display: flex;
     font-size: var(--font-small);
     margin-top:35px;
 }
 
-.affinity .search-results i.fa-solid.fa-info{
+header .affinity .search-results i.fa-solid.fa-info{
     color:var(--dark-blue-color);
     border:1px solid var(--middle-grey-color);
     border-radius: 30px;
@@ -173,45 +191,60 @@ header .menu li a{
     font-size: var(--font-xsmall);
 }
 
-main.content img{
+main {
+    padding:initial;
+    margin-top:initial;
+}
+
+main img{
     width: 100%;
 }
 
-main.content .row{
+main .row{
     width: 100%;
     display:flex;
     gap:40px;
     flex-direction: column-reverse;
+    justify-content: initial;
 } 
 
-main.content .box{
+main .box{
     border-radius: 0px;
 }
 
-main.content .popular{
+main .popular{
+    padding-top:initial;
     margin-top:15px;
+    padding-left: 10px;
+    padding-right:10px;
+    min-width: initial;
 }
 
-main.content .popular .cards{
+main .popular .cards{
     display: flex;
     flex-direction: column;
     gap:9px;
+    margin-top: initial;
+    margin-left: initial;
+    margin-right: initial;
 }
 
-main.content .popular h2{
+main .popular h2{
     margin-top: 30px;
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
 }
 
-main.content .popular article{
+main .popular article{
+    min-width: initial;
+    display: flex;
     padding: 5px;
     height: 120px;
     margin-bottom: 5px;
 }
 
-main.content .popular img{
+main .popular img{
     float: left;
     width: 110px;
     height:110px;
@@ -220,7 +253,7 @@ main.content .popular img{
     margin-right:10px;
 }
 
-main.content .popular article .description{
+main .popular article .description{
     height: 110px;
     display: flex;
     flex-direction: column;
@@ -228,15 +261,19 @@ main.content .popular article .description{
     justify-content: space-between;
 }
 
-main.content .popular article p:first-of-type{
+main .popular article p:first-of-type{
     margin-bottom: 5px;
 }
 
-main.content .hosting article{
+main .hosting article{
     height: 168px;
+    margin: initial;
+    padding: initial;
+    min-width: initial;
+    width: initial;
 }
 
-main.content .hosting article .description{
+main .hosting article .description{
     height: 60px;
     display: flex;
     flex-direction: column;
@@ -246,14 +283,14 @@ main.content .hosting article .description{
     margin-left: 10px;
 }
 
-main.content .hosting img{
+main .hosting article img{
     padding:5px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: 105px;
 }   
 
-main.content .hosting{
+main .hosting{
     margin-top: 15px;
     display: flex;
     flex-direction: column;
@@ -263,41 +300,47 @@ main.content .hosting{
     gap:10px;
 }
 
-main.content .hebergement.box{
+main .hebergement{
+    padding:10px;
+}
+
+main .hebergement.box{
     background-color: var(--plain-white-color);
     margin-top: 15px;
 }
 
-main.content .hebergement .see-more{
+main .hebergement .see-more{
     margin-top:40px;
     font-family: var(--fonts-raleway-bold);
 }
 
-main.content .activity{
+main .activity{
     display: flex;
     flex-direction: column;
     padding:20px;
+    margin-top: initial;
 }
 
-main.content .activity h2{
+main .activity h2{
     margin-top:20px;
     margin-bottom: 20px;
 }
 
-main.content .activity .column{
+main .activity .column{
     width: 100%;
+    gap: initial;
 }
 
-main.content .activity article{
+main .activity article{
     object-fit: contain;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;   
     margin-top: 20px;   
-    height: 160px;
+   
 }
 
-main.content .activity article img{
+main .activity article img{
     object-fit: cover;
     object-position: center;
     height: 100px;
@@ -305,16 +348,60 @@ main.content .activity article img{
     border-top-right-radius: 20px;
 }
 
-main.content .activity article p{
-    margin-top:20px;
-    margin-left:10px;
+
+main .activity article.one img{
+    height:100px;
 }
 
+main .activity article.two img{
+    height:100px;
+}
+
+main .activity article.three img{
+    height:100px;
+}
+
+main .activity article.four img{
+    height:100px;
+}
+
+main .activity article.five img{
+    height:100px;
+}
+
+main .activity article.six img{
+    height:100px;
+}
+
+main .activity article p{
+    padding-top: initial;
+    padding-bottom: initial;
+    padding-left: initial;
+    margin-top:15px;
+    margin-left:10px;
+    margin-bottom: 15px;
+}
+main .activity .act{
+    flex-direction: column;
+    all:unset;
+}
 footer{
     display: flex;
     flex-direction: column;
     padding: 20px;
     background-color: var(--light-grey-color);
+}
+footer .inner-foot{
+    display: initial;
+}
+
+footer .column-foot{
+    margin-top: initial;
+    margin-right: initial;
+}
+
+.off-desktop{
+    display: initial;
 }
 
 footer h3{
