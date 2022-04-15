@@ -96,12 +96,9 @@ h3{
     font-size: var(--font-medium);
 }
 
-.content p:first-of-type{
-    font-family: var(--fonts-raleway-bold);
-    font-size: var(--font-medium);
-}
 
-article p:first-of-type {
+article h4{
     font-family: var(--fonts-raleway-bold);
     font-size: var(--font-small);
+    margin-left:10px;
 }

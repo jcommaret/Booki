@@ -261,7 +261,7 @@ main .popular article .description{
     justify-content: space-between;
 }
 
-main .popular article p:first-of-type{
+main .popular article h4{
     margin-bottom: 5px;
 }
 
@@ -373,7 +373,7 @@ main .activity article.six img{
     height:100px;
 }
 
-main .activity article p{
+main .activity article p, main .activity article h4 {
     padding-top: initial;
     padding-bottom: initial;
     padding-left: initial;

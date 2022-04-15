@@ -24,13 +24,16 @@ header .navbar{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: initial;
 }
 
-header .logo{
+header .navbar .logo{
     height:65px;
+    margin-top: initial;
+    margin-left:initial;
 }
 
-header .logo img {
+header .navbar .logo img {
     margin-top: 25px;
     display: block;
     margin-left: auto;
@@ -39,30 +42,33 @@ header .logo img {
 
 }
 
-header .menu {
+header .navbar .menu {
+    
     display: flex;    
     align-items: center;
     justify-content: center;
 }
 
-header .menu li {
+header .navbar .menu li {
     width: calc(100%/2);
     font-size: var(--font-small);
 }
 
-header .menu a{    
+header .navbar .menu a{
+    width: initial;
     height: 48px;
     text-align: center;
     display: block;
     line-height: 48px;
 }
 
-header .menu li a.active{
+header .navbar .menu li a.active{
+    border-top:initial;
     border-bottom:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
 }
 
-header .menu li a{
+header .navbar .menu li a{
     border-bottom:2px solid var(--light-grey-color);
 }
 
@@ -227,7 +233,7 @@ main .see-more{
 main .popular {
     padding: 45px;
 }
-main .popular article p:first-of-type {
+main .popular article h4 {
     margin-bottom:20px;
 }
 
@@ -239,7 +245,7 @@ main .activity article img {
     border-top-right-radius: 20px;
 }
 
-main .activity article p {
+main .activity article p,main .activity article h4 {
     padding-left:5px;
     padding-top:15px;
     padding-bottom: 15px;

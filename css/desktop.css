@@ -245,7 +245,7 @@ main .activity article img {
     border-top-right-radius: 20px;
 }
 
-main .activity article p {
+main .activity article p, main .activity article h4{
     padding-top:15px;
     padding-bottom: 15px;
     padding-left:5px;
