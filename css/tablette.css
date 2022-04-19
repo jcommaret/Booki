@@ -43,13 +43,12 @@ header .navbar .logo img {
 }
 
 header .navbar .menu {
-    
     display: flex;    
     align-items: center;
     justify-content: center;
 }
 
-header .navbar .menu li {
+header .navbar .menu ul li {
     width: calc(100%/2);
     font-size: var(--font-small);
 }
@@ -62,7 +61,7 @@ header .navbar .menu a{
     line-height: 48px;
 }
 
-header .navbar .menu li a.active{
+header .navbar .menu ul li a:active{
     border-top:initial;
     border-bottom:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
@@ -364,28 +363,7 @@ main .activity article.six img{
     height:140px;
 }
 
-footer{
-    padding-top:45px;
-    padding-left:75px;
-    padding-right:75px;
-    background-color: var(--light-grey-color);
-}
-
 footer .inner-foot{
-    display: flex;
-    justify-content: space-between;
-}
-
-footer h3{
-    font-size: var(--font-small);
-}
-
-footer ul{
-    margin-top: 10px;
-    margin-bottom:15px;
-    font-size: var(--font-xsmall);
-}
-
-footer ul li{
-    line-height: 25px;
+    gap:70px;
+    font-size:var(--font-xsmall);
 }

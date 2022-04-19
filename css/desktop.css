@@ -15,14 +15,13 @@ header .navbar{
     align-items: center;
 }
 
-header .logo img {
+header .navbar .logo img {
     margin-top: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width:50px;
 }
-
 
 header .navbar .logo {
     margin-top: 15px;
@@ -42,21 +41,25 @@ header .navbar .menu a{
     line-height: 115px;
 }
 
-header .navbar .menu li a.active{
+header .navbar .menu a:active{
+    border-top:2px solid var(--dark-blue-color);
+    color:var(--dark-blue-color);
+}
+header .navbar .menu a:hover{
     border-top:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
 }
 
-.affinity{
+header .affinity{
     padding-left: 55px;
 }
 
-.affinity .site-description p:first-of-type{
+header .affinity .site-description p:first-of-type{
     margin-top: 7px;
     font-size: var(--font-medium);
 }
 
-.affinity .site-description :last-child{
+header .affinity .site-description :last-child{
     font-size: var(--font-small);
     margin-top:10px;
 }
@@ -237,14 +240,6 @@ main .popular {
     padding: 45px;
 }
 
-main .activity article img {
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 main .activity article p, main .activity article h4{
     padding-top:15px;
     padding-bottom: 15px;
@@ -265,7 +260,6 @@ main .row{
 
 main .popular {
     padding-top: 45px;
-    
 }
 
 main .popular h2{
@@ -317,63 +311,29 @@ main .activity h2{
 main .activity .act{
     display: flex;
     justify-content: space-between;
-    gap:40px;
     margin-bottom : 60px;
-    max-width:100%;    
-} 
-
-main .activity article{
-    object-fit: contain;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;   
+    gap: 30px;
 }
 
-main .activity article img {
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+main .activity .big{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
 }
 
 main .activity .column{
     display:flex;
     flex-direction: column;
-    gap:45px;
-    width:calc(100% /4 - 40px)
+    gap:40px;   
 }
 
 main .activity article img {
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-main .activity article.one img{
-    height:390px;
-}
-
-main .activity article.two img{
-    height:180px;
-}
-
-main .activity article.three img{
-    height:110px;
-}
-
-main .activity article.four img{
-    height:390px;
-}
-
-main .activity article.five img{
-    height:140px;
-}
-
-main .activity article.six img{
-    height:140px;
+main .activity .big article{
+    flex-grow: 1;
 }
 
 footer{
@@ -383,11 +343,16 @@ footer{
     padding-bottom: 45px;
     background-color: var(--light-grey-color);
 }
+
 footer .inner-foot{
     display: flex;
-    justify-content: space-between;
+    gap:300px;
 }
 
-.column-foot{
-    margin-top: 20px;
+footer .column-foot h3{
+    margin-bottom: 20px;
+}
+
+footer li{
+    line-height:30px;
 }

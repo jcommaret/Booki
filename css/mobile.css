@@ -56,7 +56,7 @@ header .navbar .menu a{
     line-height: 48px;
 }
 
-header .navbar .menu li a.active{
+header .navbar .menu ul li a:active{
     border-top:initial;
     border-bottom:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
