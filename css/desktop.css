@@ -300,11 +300,8 @@ main .popular .description{
     width: 200px;
 }
 
-main .activity{
-    margin-top: 60px;
-}
-
 main .activity h2{
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
