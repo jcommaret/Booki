@@ -201,32 +201,36 @@ main .hebergement {
 }
 
 main .hosting {
-    margin-top: 25px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap:18px;
+    gap:30px;
+    margin-top:40px;
+    margin-bottom:40px;
 }
 
-main .hosting article{
-    margin:auto;
-    padding: 5px;
-    min-width:225px;
-    width: calc(100%/3 - 20px);
+main .hosting a{
+    display: block;
+    flex:1;
+    height:360px;
 }
-
 main .hosting article img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width:100%;
-    object-position: center;
-    height: 115px;
 }
+
+main .hosting a article{
+    width: 100%;
+    height:100%;
+    padding: 5px;
+} 
+
+main .hosting a article img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height:75%;
+} 
 main .hosting .description{
-    display:flex;
-    flex-direction: column;
-    height:70px;
-    justify-content: space-between;
+    margin-top: 10px;
 }
 
 main .see-more{
@@ -305,23 +309,25 @@ main .activity h2{
     margin-bottom: 20px;
 }
 
-main .activity .act{
+
+.activity .act {
+    display:flex;
+    height:500px;    
+    gap:30px;
+}
+
+.act div{
+    flex:1;
+}
+
+.act div:nth-child(1), .act div:nth-child(3){
+    height:100%;
+}
+
+.act article, .act .column{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom : 60px;
-    gap: 30px;
-}
-
-main .activity .big{
-    display:flex;
-    flex-direction: column;
-    gap:40px;
-}
-
-main .activity .column{
-    display:flex;
-    flex-direction: column;
-    gap:40px;   
 }
 
 main .activity article img {
@@ -329,11 +335,25 @@ main .activity article img {
     border-top-right-radius: 20px;
 }
 
-main .activity .big article{
-    flex-grow: 1;
+.act div:nth-child(1) article, .act div:nth-child(3) article{
+    height:100%;
 }
 
+.act div:nth-child(1) article img, .act div:nth-child(3) article img{
+    height:100%;
+}
+
+.act .column article{
+    height:45%;
+}
+
+.act .column article img{
+    max-height:80%;
+}
+
+
 footer{
+    margin-top:60px;
     padding-top:45px;
     padding-left:75px;
     padding-right: 75px;

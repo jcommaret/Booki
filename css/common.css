@@ -34,6 +34,7 @@
     --shadow-grey-color:#DDD;
     --fonts-raleway-light: "Raleway-Light";
     --fonts-raleway-bold: "Raleway-Bold";
+    box-sizing: border-box;
 }
 
 article{
