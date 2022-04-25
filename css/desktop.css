@@ -212,10 +212,6 @@ main .hosting a{
     flex:1;
     height:360px;
 }
-main .hosting article img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
 
 main .hosting a article{
     width: 100%;
@@ -229,8 +225,17 @@ main .hosting a article img{
     max-height: 100%;
     height:75%;
 } 
+main .hosting article img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 main .hosting .description{
     margin-top: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main .see-more{
@@ -263,9 +268,8 @@ main .row{
 }
 
 main .popular {
-    padding-top: 45px;
+    padding: 45px;
 }
-
 main .popular h2{
     display: flex;
     justify-content: space-between;
@@ -274,34 +278,42 @@ main .popular h2{
 main .popular .cards{
     display: flex;
     flex-direction: column;
-    gap:20px;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 40px;
+    gap:30px;
 }
 
-main .popular article{
-    min-width: 325px;
+main .popular .cards a{
+    display: block;
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+main .popular .cards a article{
     padding:5px;
     display: flex;
+    flex-direction: row;
+    height:145px;
 }
 
-main .popular img{
+main .popular .cards a article img{
+    flex:1;
+    object-fit: cover;
     object-position: center;
-    height: 132px;
-    width: 132px;
-    margin-right:20px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
+    max-height: 100%;
+    width:120px;
+    height: 139px;
+    
 }
 
-main .popular .description{
+main .popular .cards a article .description{
     display: flex;
+    flex:1;
     flex-direction: column;
     justify-content:space-between;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 200px;
 }
 
 main .activity h2{
@@ -309,22 +321,21 @@ main .activity h2{
     margin-bottom: 20px;
 }
 
-
-.activity .act {
+main .activity .act {
     display:flex;
     height:500px;    
     gap:30px;
 }
 
-.act div{
+main .act div{
     flex:1;
 }
 
-.act div:nth-child(1), .act div:nth-child(3){
+main .act div:nth-child(1), .act div:nth-child(3){
     height:100%;
 }
 
-.act article, .act .column{
+main .act article, .act .column{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -335,22 +346,21 @@ main .activity article img {
     border-top-right-radius: 20px;
 }
 
-.act div:nth-child(1) article, .act div:nth-child(3) article{
+main .act div:nth-child(1) article, .act div:nth-child(3) article{
     height:100%;
 }
 
-.act div:nth-child(1) article img, .act div:nth-child(3) article img{
+main .act div:nth-child(1) article img, .act div:nth-child(3) article img{
     height:100%;
 }
 
-.act .column article{
+main .act .column article{
     height:45%;
 }
 
-.act .column article img{
+main .act .column article img{
     max-height:80%;
 }
-
 
 footer{
     margin-top:60px;
