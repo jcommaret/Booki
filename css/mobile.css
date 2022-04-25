@@ -37,7 +37,6 @@ header .navbar .logo img {
 }
 
 header .navbar .menu {
-    
     display: flex;    
     align-items: center;
     justify-content: center;
@@ -54,16 +53,16 @@ header .navbar .menu a{
     text-align: center;
     display: block;
     line-height: 48px;
+    border-bottom:2px solid var(--light-grey-color);
 }
+header .navbar .menu a:hover{
+    border-top:initial;
+};
 
-header .navbar .menu ul li a:active{
+header .navbar .menu a:active{
     border-top:initial;
     border-bottom:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
-}
-
-header .navbar .menu li a{
-    border-bottom:2px solid var(--light-grey-color);
 }
 
 header .affinity{
@@ -91,7 +90,6 @@ header .affinity .search i{
     padding-bottom: 13px;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 header .affinity .search i.fa-map-marker-alt{
@@ -265,31 +263,6 @@ main .popular article h4{
     margin-bottom: 5px;
 }
 
-main .hosting article{
-    height: 168px;
-    margin: initial;
-    padding: initial;
-    min-width: initial;
-    width: initial;
-}
-
-main .hosting article .description{
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    font-size: var(--font-xsmall);
-    justify-content: space-between;
-    padding-bottom: 5px;
-    margin-left: 10px;
-}
-
-main .hosting article img{
-    padding:5px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    height: 105px;
-}   
-
 main .hosting{
     margin-top: 15px;
     display: flex;
@@ -299,6 +272,32 @@ main .hosting{
     font-size: var(--font-xsmall);
     gap:10px;
 }
+
+main .hosting a article{
+    height: 168px;
+    margin: initial;
+    padding: initial;
+    min-width: initial;
+    width: initial;
+}
+
+main .hosting a article .description{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-xsmall);
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-top:initial;
+}
+
+main .hosting a article img{
+    padding:5px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 105px;
+}   
 
 main .hebergement{
     padding:10px;

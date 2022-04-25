@@ -41,11 +41,12 @@ header .navbar .menu a{
     line-height: 115px;
 }
 
-header .navbar .menu a:active{
+header .navbar ul li a:hover{
     border-top:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
 }
-header .navbar .menu a:hover{
+
+header .navbar ul li a:active{
     border-top:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
 }

@@ -48,7 +48,7 @@ header .navbar .menu {
     justify-content: center;
 }
 
-header .navbar .menu ul li {
+header .navbar .menu li {
     width: calc(100%/2);
     font-size: var(--font-small);
 }
@@ -61,14 +61,18 @@ header .navbar .menu a{
     line-height: 48px;
 }
 
-header .navbar .menu ul li a:active{
+header .navbar .menu a{
+    border-bottom:2px solid var(--light-grey-color);
+}
+header .navbar .menu a:hover{
+    border-top:initial;
+
+}
+
+header .navbar .menu a:active{
     border-top:initial;
     border-bottom:2px solid var(--dark-blue-color);
     color:var(--dark-blue-color);
-}
-
-header .navbar .menu li a{
-    border-bottom:2px solid var(--light-grey-color);
 }
 
 header .affinity{
@@ -167,7 +171,7 @@ header .affinity .filters li{
 }
 
 header .affinity .filters li p{
-    padding-top:12px;
+    padding-top: 12px;
     padding-left: 4px;
 }
 
