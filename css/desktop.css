@@ -223,6 +223,14 @@ main .hosting a:hover{
     
 }
 
+main .activity :hover article{
+    background: rgb(250, 244, 244);
+}
+
+main .activity :hover{
+    transform: scale(102%);   
+}
+
 main .hosting a:hover article{
     background: rgb(250, 244, 244);
 }

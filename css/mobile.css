@@ -14,6 +14,10 @@
     display: none;
 }
 
+.off-desktop{
+    display: initial;
+}
+
 header .navbar{
     display: flex;
     flex-direction: column;
@@ -109,6 +113,7 @@ header .affinity .search .input-field{
     padding-left: 15px;
     width: 100%;
 }
+
 header .affinity .submit-bt{
     margin-left: -20px;
     background-color: initial;
@@ -118,6 +123,7 @@ header .affinity .submit-bt{
     border-top-right-radius: initial;
     border-bottom-right-radius: initial;
 }
+
 header .affinity .submit-bt:hover{
     background-color: initial;
     color:initial;
@@ -251,7 +257,7 @@ main .popular img{
 }
 
 main .popular article .description{
-    height: 110px;
+    height: 195px;
     display: flex;
     flex-direction: column;
     font-size: var(--font-xsmall);
@@ -270,6 +276,7 @@ main .hosting{
     justify-content: space-between;
     font-size: var(--font-xsmall);
     gap:10px;
+    margin-bottom: initial;
 }
 
 main .hosting a article{
@@ -281,7 +288,7 @@ main .hosting a article{
 }
 
 main .hosting a article .description{
-    height: 60px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     font-size: var(--font-xsmall);
@@ -317,6 +324,7 @@ main .activity{
     flex-direction: column;
     padding:20px;
     margin-top: initial;
+    height:initial;
 }
 
 main .activity h2{
@@ -381,12 +389,23 @@ main .activity article p, main .activity article h4 {
 }
 main .activity .act{
     flex-direction: column;
-    all:unset;
+    gap: initial;
+    height: initial;
 }
+
+main .act div:nth-child(1) article, .act div:nth-child(3) article {
+    height: 168px;
+}
+
+main .act div:nth-child(1) article img, .act div:nth-child(3) article img {
+    height: 120px;
+}
+
 footer{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin-top: initial;
     background-color: var(--light-grey-color);
 }
 footer .inner-foot{
