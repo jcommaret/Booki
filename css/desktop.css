@@ -106,6 +106,7 @@ header .affinity .site-description :last-child{
     padding-right:20px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    cursor: pointer;
 }
 .affinity .submit-bt:hover{
     background-color: var(--plain-white-color);
@@ -157,6 +158,7 @@ header .affinity .site-description :last-child{
     padding-right: 20px;
 }
 .affinity .filters li:hover{
+    cursor:pointer;
     border:2px solid var(--light-blue-color);
     color:var(--dark-blue-color);
     background-color: var(--light-blue-color);
@@ -199,6 +201,7 @@ main{
 
 main .hebergement {
     padding: 45px;
+    flex:3;
 }
 
 main .hosting {
@@ -212,42 +215,57 @@ main .hosting a{
     display: block;
     flex:1;
     height:360px;
+
 }
+
+main .hosting a:hover{
+    transform: scale(102%);
+    
+}
+
+main .hosting a:hover article{
+    background: rgb(250, 244, 244);
+}
+
+
+
+main .popular a:hover{
+    transform: scale(102%);
+}
+main .popular a:hover article{
+    background: rgb(250, 244, 244);
+}
+
 
 main .hosting a article{
     width: 100%;
     height:100%;
     padding: 5px;
+    position: relative;
 } 
 
 main .hosting a article img{
     width: 100%;
     max-width: 100%;
     max-height: 100%;
-    height:75%;
-} 
-main .hosting article img{
+    height:240px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
+} 
 
-main .hosting .description{
+main .hosting  article .description{
     margin-top: 10px;
     height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+main .hosting article .rating{
+    position:absolute;
+    bottom:5px;
 }
 
 main .see-more{
     font-family: var(--fonts-raleway-bold);
     font-size:var(--font-small);
     margin-top: 30px;
-}
-
-
-main .popular {
-    padding: 45px;
 }
 
 main .activity article p, main .activity article h4{
@@ -262,14 +280,13 @@ main .box{
 }
 
 main .row{
-    width: 100%;
     display:flex;
     gap:40px;
-    justify-content: space-between;
 }
 
 main .popular {
     padding: 45px;
+    flex:2;
 }
 main .popular h2{
     display: flex;
@@ -286,14 +303,13 @@ main .popular .cards{
 main .popular .cards a{
     display: block;
     flex: 1;
-    margin-bottom: 30px;
 }
 
 main .popular .cards a article{
     padding:5px;
     display: flex;
     flex-direction: row;
-    height:145px;
+    height:200px;
 }
 
 main .popular .cards a article img{
@@ -304,7 +320,7 @@ main .popular .cards a article img{
     border-top-left-radius: 20px;
     max-height: 100%;
     width:120px;
-    height: 139px;
+    height: 200px;
     
 }
 
@@ -332,6 +348,10 @@ main .act div{
     flex:1;
 }
 
+main .activity article :hover{
+    cursor: pointer;
+}
+
 main .act div:nth-child(1), .act div:nth-child(3){
     height:100%;
 }
@@ -357,6 +377,7 @@ main .act div:nth-child(1) article img, .act div:nth-child(3) article img{
 
 main .act .column article{
     height:45%;
+
 }
 
 main .act .column article img{

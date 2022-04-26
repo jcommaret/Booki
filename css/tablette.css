@@ -264,7 +264,7 @@ main .box{
 main .row{
     width: 100%;
     display:flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap:40px;
     justify-content: initial;
 }
@@ -305,66 +305,29 @@ main .popular .description{
     width: 200px;
 }
 
-main .activity{
-    margin-top: 60px;
+main .activity {
+    height:1000px;
 }
 
-main .activity h2{
-    margin-bottom: 20px;
+main .act .column article{
+    height:initial;
 }
 
-main .activity .act{
-    display: flex;
-    justify-content: space-between;
-    gap:40px;
-    margin-bottom : 60px;
-    max-width:100%;    
-} 
+main .act .column{
+    gap:30px;
+}
 
-main .activity article{
-    object-fit: contain;
-    display: flex;
+main .act {
     flex-direction: column;
-    flex-wrap: wrap;   
 }
-
-main .activity article img {
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+main .act article{
+    height:100px; 
 }
-
-main .activity .column{
-    display:flex;
-    flex-direction: column;
-    gap:40px;
-    width:calc(100% /4 - 40px)
+main .act div:nth-child(1) article img, .act div:nth-child(3) article img {
+    height: 100px;
 }
-
-main .activity article.one img{
-    height:390px;
-}
-
-main .activity article.two img{
-    height:180px;
-}
-
-main .activity article.three img{
-    height:110px;
-}
-
-main .activity article.four img{
-    height:390px;
-}
-
-main .activity article.five img{
-    height:140px;
-}
-
-main .activity article.six img{
-    height:140px;
+main .act .column article img {
+    max-height: 100px;
 }
 
 footer .inner-foot{
