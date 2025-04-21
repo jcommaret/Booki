@@ -5,8 +5,9 @@ import { activites1, activites2, activites3, activites4, activites5, activites6 
 // * Popular
 import { popular1, popular2, popular3 } from './assets/images/images'
 
-import Header from './components/header';
 
+import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -139,7 +140,6 @@ function App() {
                     <div className="see-more">
                         Afficher plus
                     </div>
-                
                 </div>
                     
                 <div className="popular box">
@@ -273,34 +273,7 @@ function App() {
             </div>
         </main>
         
-        <footer className="footer">
-            <div className="inner-foot">        
-                <div className="column-foot">
-                    <h3>A propos</h3>
-                    <ul>
-                        <li>Fonctionnement général du site</li>
-                        <li>Conditions générales de vente</li>
-                        <li>Données et confidentialité</li>
-                    </ul> 
-                </div>
-                
-                <div className="column-foot">
-                    <h3>Nos Hébergements</h3>
-                    <ul>
-                        <li>Charte qualité</li>
-                        <li>Soumettre votre hôtel</li>
-                    </ul> 
-                </div>
-
-                <div className="column-foot">
-                    <h3>Assistance</h3>
-                    <ul>            
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
-                    </ul> 
-                </div>
-            </div>
-        </footer>
+        <Footer />
     </div>
   )
 }

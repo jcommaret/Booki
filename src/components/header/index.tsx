@@ -3,14 +3,17 @@ import { logo } from '../../assets/images/images'
 export function Header() {
     return (
         <header>
+       
         <nav className="navbar">
             <a className="logo" href="#">
                 <img src={logo.src} srcSet={logo.srcSet} sizes={logo.sizes} alt={logo.alt}/>
             </a>
+        
             <ul className="menu">
                 <li><a href="#hebergement">Hébergements</a></li>
                 <li><a href="#activites">Activités</a></li>
             </ul>
+        
         </nav>
 
         <section className="affinity">
