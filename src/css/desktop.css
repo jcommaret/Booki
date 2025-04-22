@@ -69,6 +69,7 @@ header .affinity .site-description :last-child{
     margin-top: 15px;
     font-family: var(--fonts-raleway-bold);
     display: flex;
+    font-weight: 700;
    
 }
 
@@ -156,6 +157,7 @@ header .affinity .site-description :last-child{
     text-align: center;
     height:50px;
     padding-right: 20px;
+    font-weight: 700;
 }
 .affinity .filters li:hover{
     cursor:pointer;
@@ -267,6 +269,7 @@ main .see-more{
     font-family: var(--fonts-raleway-bold);
     font-size:var(--font-small);
     margin-top: 30px;
+    font-weight: 700;
 }
 
 main .activity article p, main .activity article h4{
