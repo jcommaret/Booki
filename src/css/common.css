@@ -1,12 +1,9 @@
 /* fonts */
 @font-face {
     font-family: "Raleway-Light";
-    src:url('@fonts/Raleway-Light/Raleway-Light.woff') format('woff'),
-            url('@fonts/Raleway-Light/Raleway-Light.woff2') format('woff2'),
-            url('@fonts/Raleway-Light/Raleway-Light.svg#Raleway-Light') format('svg'),
-            url('@fonts/Raleway-Light/Raleway-Light.eot'),
-            url('@fonts/Raleway-Light/Raleway-Light.eot?#iefix') format('embedded-opentype'),
-            url('@fonts/Raleway-Light/Raleway-Light.ttf') format('truetype');
+    src: url('../assets/fonts/Raleway-Light/Raleway-Light.woff2') format('woff2'),
+         url('../assets/fonts/Raleway-Light/Raleway-Light.woff') format('woff'),
+         url('../assets/fonts/Raleway-Light/Raleway-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -14,12 +11,9 @@
 
 @font-face {
     font-family: "Raleway-Bold";
-    src:url('@fonts/Raleway-Bold/Raleway-Bold.woff') format('woff'),
-            url('@fonts/Raleway-Bold/Raleway-Bold.woff2') format('woff2'),
-            url('@fonts/Raleway-Bold/Raleway-Bold.svg#Raleway-Bold') format('svg'),
-            url('@fonts/Raleway-Bold/Raleway-Bold.eot'),
-            url('@fonts/Raleway-Bold/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-            url('@fonts/Raleway-Bold/Raleway-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Raleway-Bold/Raleway-Bold.woff2') format('woff2'),
+         url('../assets/fonts/Raleway-Bold/Raleway-Bold.woff') format('woff'),
+         url('../assets/fonts/Raleway-Bold/Raleway-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

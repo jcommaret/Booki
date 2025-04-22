@@ -11,17 +11,17 @@ export type ImageMapType = {
 };
 
 // Types pour les composants
-export interface ImageProps {
+export type ImageProps = {
     image: ImageType;
-}
+};
 
-export interface ArticleProps {
+export type ArticleProps = {
     image: ImageType;
     title: string;
     description?: string;
     rating?: string;
     className?: string;
-}
+};
 
 // Types pour le contenu
 export type ContentItem = {
