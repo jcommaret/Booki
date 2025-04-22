@@ -85,6 +85,7 @@ header .affinity .site-description :last-child{
 header.affinity .search form{
     margin-top: 30px;
     font-family: var(--fonts-raleway-bold);
+    font-weight: 700;
     display: flex;
 }
 
@@ -163,6 +164,7 @@ header .affinity .filters li{
     border-radius: 50px;
     border:2px solid #d8d8d8;
     font-family: var(--fonts-raleway-bold);
+    font-weight: 700;
     font-size: var(--font-small);
     text-align: center;
     height:42px;
@@ -317,6 +319,7 @@ main .hebergement.box{
 main .hebergement .see-more{
     margin-top:40px;
     font-family: var(--fonts-raleway-bold);
+    font-weight: 700;
 }
 
 main .activity{
