@@ -1,273 +1,156 @@
 // * Hébergements
-import { hebergements1, hebergements2, hebergements3, hebergements4, hebergements5, hebergements6 } from './assets/images/images'
+import { hebergements1, hebergements2, hebergements3, hebergements4, hebergements5, hebergements6 } from './assets/images/images';
 // * Activités
 import { activites1, activites2, activites3, activites4, activites5, activites6 } from './assets/images/images'
 // * Popular
 import { popular1, popular2, popular3 } from './assets/images/images'
+import content from './assets/data/content.json';
 
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Article from './components/Article';
 
-import Header from './components/header';
-import Footer from './components/footer';
+type ImageType = {
+  src: string;
+  srcSet: string;
+  sizes: string;
+  alt: string;
+};
+
+type ImageMapType = {
+  [key: string]: ImageType;
+};
+
+type ContentItem = {
+  image: string;
+  title: string;
+  description?: string;
+  rating?: string;
+};
+
+type ContentSection = {
+  section: string;
+  items: ContentItem[];
+};
 
 function App() {
+  const imageMap: ImageMapType = {
+    hebergement1: hebergements1,
+    hebergement2: hebergements2,
+    hebergement3: hebergements3,
+    hebergement4: hebergements4,
+    hebergement5: hebergements5,
+    hebergement6: hebergements6,
+    popular1: popular1,
+    popular2: popular2,
+    popular3: popular3,
+    activites1: activites1,
+    activites2: activites2,
+    activites3: activites3,
+    activites4: activites4,
+    activites5: activites5,
+    activites6: activites6,
+  };
+
+  const typedContent = content as ContentSection[];
+
+  console.log('Hébergements items:', typedContent[0].items);
+  console.log('Premier hébergement:', typedContent[0].items[0]);
+  console.log('Image du premier hébergement:', imageMap[typedContent[0].items[0].image]);
+
   return (
     <div className="wrapper">
         <Header />
         <main>   
             <div className="row">
                 <div id="hebergement" className="hebergement box">
-                    <h2>Hébergements à Marseille</h2>    
+                    <h2>{typedContent[0].section}</h2>    
                     <div className="hosting">        
-                        <a href="#">
-                            <article>
-                            <img src={hebergements1.src} srcSet={hebergements1.srcSet} sizes={hebergements1.sizes} alt={hebergements1.alt}/>
-                                <div className="description">
-                                    <h4>Auberge La Cannebière</h4>
-                                    <p>Nuit à partir de 25€</p>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star"></span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        
-                        <a href="#">
-                            <article>
-                                <img src={hebergements2.src} 
-                                    srcSet={hebergements2.srcSet} 
-                                    sizes={hebergements2.sizes} 
-                                    alt={hebergements2.alt}></img>
-                                <div className="description">
-                                    <h4>Hôtel du port</h4>
-                                    <p>Nuit à partir de 52€</p>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star"></span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        
-                        <a href="#">
-                            <article>
-                                <img src={hebergements3.src} 
-                                    srcSet={hebergements3.srcSet} 
-                                    sizes={hebergements3.sizes} 
-                                    alt={hebergements3.alt}></img>
-                                <div className="description">
-                                    <h4>Hôtel Les mouettes</h4>
-                                    <p>Nuit à partir de 76€</p>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
+                        {typedContent[0].items.slice(0, 3).map((item, index) => (
+                            <Article 
+                                key={index}
+                                image={imageMap[item.image]}
+                                title={item.title}
+                                description={item.description}
+                                rating={item.rating}
+                            />
+                        ))}
                     </div>
-                    <div className="hosting">
-                        <a href="#">
-                            <article>
-                                <img src={hebergements4.src} 
-                                    srcSet={hebergements4.srcSet} 
-                                    sizes={hebergements4.sizes} 
-                                    alt={hebergements4.alt}></img>          
-                                <div className="description">
-                                    <h4>Hôtel de la mer</h4>
-                                    <p>Nuit à partir de 25€</p>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star"></span>
-                                        <span className="fa fa-star"></span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-
-                        <a href="#">
-                            <article>
-                                <img src={hebergements5.src} 
-                                    srcSet={hebergements5.srcSet} 
-                                    sizes={hebergements5.sizes} 
-                                    alt={hebergements5.alt}></img>
-                                                                            
-                                <div className="description">    
-                                    <h4>Auberge Le Panier</h4>
-                                    <p>Nuit à partir de 25€</p>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star"></span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article>
-                                <img src={hebergements6.src} 
-                                    srcSet={hebergements6.srcSet} 
-                                    sizes={hebergements6.sizes} 
-                                    alt={hebergements6.alt}></img>
-                                <div className="description">
-                                    <h4>Hôtel chez Amina</h4>
-                                    <p>Nuit à partir de 25€</p>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
+                    <div className="hosting">    
+                        {typedContent[0].items.slice(3, 6).map((item, index) => (
+                            <Article 
+                                key={index}
+                                image={imageMap[item.image]}
+                                title={item.title}
+                                description={item.description}
+                                rating={item.rating}
+                            />
+                        ))}
                     </div>
-
                     <div className="see-more">
                         Afficher plus
                     </div>
                 </div>
                     
                 <div className="popular box">
-                    <h2>Les plus populaires <i className="fa fa-star checked"></i></h2> 
+                    <h2>{typedContent[1].section} <i className="fa fa-star checked"></i></h2> 
                     <div className="cards">
-                        <a href="#">
-                            <article>
-                                <img src={popular1.src} 
-                                    srcSet={popular1.srcSet} 
-                                    sizes={popular1.sizes} 
-                                    alt={popular1.alt}></img>       
-                                <div className="description">
-                                    <div className="text"> 
-                                        <h4>Hôtel le soleil du matin</h4>
-                                        <p>Nuit à partir de 128€</p>
-                                    </div>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                    </div>
-                                </div>
-                            </article>    
-                        </a>
-                        <a href="#">
-                            <article>
-                                <img src={popular2.src} 
-                                    srcSet={popular2.srcSet} 
-                                    sizes={popular2.sizes} 
-                                    alt={popular2.alt}></img>
-                                <div className="description">
-                                    <div className="text">
-                                        <h4>Au coeur de l'eau chambre d'hôtes</h4>
-                                        <p>Nuit à partir de 71€</p>
-                                    </div>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star"></span>
-                                    </div>
-                                </div>
-                            </article> 
-                        </a>
-                        <a href="#">
-                            <article>
-                                <img src={popular3.src} 
-                                    srcSet={popular3.srcSet} 
-                                    sizes={popular3.sizes} 
-                                    alt={popular3.alt}></img>
-                                <div className="description">
-                                    <div className="text">
-                                        <h4>Hôtel Tout bleu et Blanc</h4>
-                                        <p>Nuit à partir de 68€</p>
-                                    </div>
-                                    <div className="rating">
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star checked"></span>
-                                        <span className="fa fa-star"></span>
-                                    </div>    
-                                </div>
-                            </article>
-                        </a>
+                        {typedContent[1].items.map((item, index) => (
+                            <Article 
+                                key={index}
+                                image={imageMap[item.image]}
+                                title={item.title}
+                                description={item.description}
+                                rating={item.rating}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
 
             <div id="activites" className="activity">
-                <h2>Activités à Marseille</h2>
-                <div className="act">
+                <h2>{typedContent[2].section}</h2>
+                <div className="activity">
                     <div className="big">
-                        <article className="one">
-                            <img src={activites1.src} 
-                                srcSet={activites1.srcSet} 
-                                sizes={activites1.sizes} 
-                                alt={activites1.alt}></img>
-                            <h4>Vieux Port</h4>
-                        </article>
+                        <Article 
+                            image={imageMap[typedContent[2].items[0].image]}
+                            title={typedContent[2].items[0].title}
+                            className="one"
+                        />
                     </div>
             
                     <div className="column">
-                        <article className="two">
-                            <img src={activites2.src} 
-                                srcSet={activites2.srcSet} 
-                                sizes={activites2.sizes} 
-                                alt={activites2.alt}></img>
-                            <h4>Fort de Pomègues</h4>
-                        </article>
-                        <article className="three">
-                            <img src={activites3.src} 
-                                srcSet={activites3.srcSet} 
-                                sizes={activites3.sizes} 
-                                alt={activites3.alt}></img>
-                            <h4>Îles du Frioul</h4>
-                        </article>
+                        <Article 
+                            image={imageMap[typedContent[2].items[1].image]}
+                            title={typedContent[2].items[1].title}
+                            className="two"
+                        />
+                        <Article 
+                            image={imageMap[typedContent[2].items[2].image]}
+                            title={typedContent[2].items[2].title}
+                            className="three"
+                        />
                     </div>
                 
                     <div className="big">
-                        <article className="four">
-                            <img src={activites4.src} 
-                                srcSet={activites4.srcSet} 
-                                sizes={activites4.sizes} 
-                                alt={activites4.alt}></img>
-                            <h4>Parc Nationnal des calanques</h4>
-                        </article>
+                        <Article 
+                            image={imageMap[typedContent[2].items[3].image]}
+                            title={typedContent[2].items[3].title}
+                            className="four"
+                        />
                     </div>
                     
                     <div className="column">
-                        <article className="five">
-                            <img  
-                                srcSet={activites5.srcSet} 
-                                sizes={activites5.sizes} 
-                                alt={activites5.alt}></img>
-                            <h4>Notre-Dame-De-La-Garde</h4>
-                        </article>
-
-                        <article className="six">
-                            <img src={activites6.src} 
-                                srcSet={activites6.srcSet} 
-                                sizes={activites6.sizes} 
-                                alt={activites6.alt}></img>
-                            <h4>Parc longchamps</h4>
-                        </article>
+                        <Article 
+                            image={imageMap[typedContent[2].items[4].image]}
+                            title={typedContent[2].items[4].title}
+                            className="five"
+                        />
+                        <Article 
+                            image={imageMap[typedContent[2].items[5].image]}
+                            title={typedContent[2].items[5].title}
+                            className="six"
+                        />
                     </div>
                 </div>
             </div>

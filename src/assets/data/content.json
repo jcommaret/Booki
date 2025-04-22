@@ -1,0 +1,95 @@
+[
+    {
+        "section": "Hebergements à Marseille",
+        "items": [
+            {
+                "image": "hebergement1",
+                "title":"Auberge La Cannebière",
+                "description": "Nuit à partir de 25€",
+                "rating" : "4"
+            },
+            {
+                "image": "hebergement2",
+                "title":"Hôtel du port",
+                "description": "Nuit à partir de 52€",
+                "rating" : "4"
+            },
+            {
+                "image": "hebergement3",
+                "title":"Hôtel Les mouettes",
+                "description": "Nuit à partir de 76€",
+                "rating" : "5"
+            },
+            {
+                "image": "hebergement4",
+                "title":"Hôtel de la mer",
+                "description": "Nuit à partir de 25€",
+                "rating" : "3"
+            },
+            {
+                "image": "hebergement5",
+                "title":"Auberge Le Panier",
+                "description": "Nuit à partir de 25€",
+                "rating" : "4"
+            },
+            {
+                "image": "hebergement6",
+                "title":"Hôtel chez Amina",
+                "description": "Nuit à partir de 25€",
+                "rating" : "5"
+            }
+        ]
+    },
+    {
+        "section": "Les plus populaires",
+        "items": [
+            {
+                "image": "popular1",
+                "title":"Hôtel le soleil du matin",
+                "description": "Nuit à partir de 128€",
+                "rating" : "5"
+            },
+            {
+                "image": "popular2",
+                "title":"Au coeur de l'eau chambre d'hôtes",
+                "description": "Nuit à partir de 71€",
+                "rating" : "4"
+            },
+            {
+                "image": "popular3",
+                "title":"Hôtel Tout bleu et Blanc",
+                "description": "Nuit à partir de 68€",
+                "rating" : "4"
+            }
+        ]
+    },
+    {
+        "section": "Activités à Marseille",
+        "items": [
+            {
+                "image": "activites1",
+                "title":"Vieux Port"
+            },
+            {
+                "image": "activites2",
+                "title":"Fort de Pomègues"
+            },
+            {
+                "image": "activites3",
+                "title":"Îles du Frioul"
+            },
+            {
+                "image": "activites4",
+                "title":"Parc National des Calanques"
+            },
+            {
+                "image": "activites5",
+                "title":"Notre-Dame-de-la-Garde"
+            },
+            {
+                "image": "activites6",
+                "title":"Parc Longchamps"
+            }
+        ]
+    } 
+]
