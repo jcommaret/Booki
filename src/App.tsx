@@ -1,57 +1,14 @@
-// * Hébergements
-import { hebergements1, hebergements2, hebergements3, hebergements4, hebergements5, hebergements6 } from './assets/images/images';
-// * Activités
-import { activites1, activites2, activites3, activites4, activites5, activites6 } from './assets/images/images'
-// * Popular
-import { popular1, popular2, popular3 } from './assets/images/images'
+// * Imports
+import { imageMap } from './assets/images/images';
 import content from './assets/data/content.json';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Article from './components/Article';
 
-type ImageType = {
-  src: string;
-  srcSet: string;
-  sizes: string;
-  alt: string;
-};
-
-type ImageMapType = {
-  [key: string]: ImageType;
-};
-
-type ContentItem = {
-  image: string;
-  title: string;
-  description?: string;
-  rating?: string;
-};
-
-type ContentSection = {
-  section: string;
-  items: ContentItem[];
-};
+import { ContentSection } from './types/articles';
 
 function App() {
-  const imageMap: ImageMapType = {
-    hebergement1: hebergements1,
-    hebergement2: hebergements2,
-    hebergement3: hebergements3,
-    hebergement4: hebergements4,
-    hebergement5: hebergements5,
-    hebergement6: hebergements6,
-    popular1: popular1,
-    popular2: popular2,
-    popular3: popular3,
-    activites1: activites1,
-    activites2: activites2,
-    activites3: activites3,
-    activites4: activites4,
-    activites5: activites5,
-    activites6: activites6,
-  };
-
   const typedContent = content as ContentSection[];
 
   console.log('Hébergements items:', typedContent[0].items);
@@ -110,7 +67,7 @@ function App() {
 
             <div id="activites" className="activity">
                 <h2>{typedContent[2].section}</h2>
-                <div className="activity">
+                <div className="act">
                     <div className="big">
                         <Article 
                             image={imageMap[typedContent[2].items[0].image]}

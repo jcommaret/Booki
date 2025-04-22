@@ -1,14 +1,5 @@
 import React from 'react';
-
-// Define the props for the Image component
-interface ImageProps {
-    image: {
-        src: string;
-        srcSet: string;
-        sizes: string;
-        alt: string;
-    };
-}
+import { ImageProps } from '../../types/articles';
 
 // Image component that takes in an image object as a prop
 const Image: React.FC<ImageProps> = ({ image }) => {

@@ -1,17 +1,6 @@
 import Image from '../Image';
 
-interface ArticleProps {
-    image: {
-        src: string;
-        srcSet: string;
-        sizes: string;
-        alt: string;
-    };
-    title: string;
-    description?: string;
-    rating?: string;
-    className?: string;
-}
+import { ArticleProps } from '../../types/articles';
 
 const Article: React.FC<ArticleProps> = ({ image, title, description, rating, className }) => {
     // Use a type guard to ensure the image exists

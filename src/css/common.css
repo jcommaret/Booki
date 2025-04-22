@@ -64,6 +64,18 @@ article p, .rating{
     color:var(--dark-blue-color);
 }
 
+.fa-star.checked {
+    color: #0065FC;
+}
+
+.fa-star {
+    color: #F2F2F2;
+}
+
+.rating {
+    display: flex;
+    gap: 2px;
+}
 
 body{
     width: 100%;
