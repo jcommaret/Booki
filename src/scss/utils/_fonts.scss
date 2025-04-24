@@ -5,23 +5,6 @@ $raleway : "Raleway" , sans-serif;
 
 $font-xsmall: 14px;
 $font-small: 18px;
+$font-normal: 16px;
 $font-medium: 20px;
 $font-large: 24px;
-
-/**
-@include m.tablet{
-    $font-xsmall: 12px;
-    $font-small: 14px;
-    $font-normal: 16px;
-    $font-medium: 19px;
-    $font-large: 24px;
-}
-
-@include m.mobile{
-    $font-xsmall: 12px;
-    $font-small: 14px;
-    $font-normal: 16px;
-    $font-medium: 19px;
-    $font-large: 24px;
-}
-    **/
