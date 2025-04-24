@@ -1,0 +1,86 @@
+@use "../utils/fonts" as f;
+@use "../utils/colors" as c;
+
+article{
+    background-color: c.$plain-white-color;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 5px c.$shadow-grey-color;
+}
+
+article img{
+    object-fit: cover;
+}
+
+article .rating{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+article p, .rating{
+    margin-left: 10px;
+}
+
+.fa-star{
+    color: c.$light-blue-color
+}
+
+.fa-star.checked{
+    color: c.$dark-blue-color;
+}
+
+.fa-star.checked {
+    color: #0065FC;
+}
+
+.fa-star {
+    color: #F2F2F2;
+}
+
+.rating {
+    display: flex;
+    gap: 2px;
+}
+
+body{
+    width: 100%;
+    background-color: c.$plain-white-color;
+    font-family: f.$raleway;
+    font-weight: 400;
+}
+
+h1{
+    text-indent: -99999px;
+}
+
+h2{
+    font-family: f.$raleway;
+    font-size:f.$font-medium;
+    font-weight: 700;
+}
+h2 i.fa-star.fa-star.checked{
+    color:#000;
+}
+
+h3{
+    font-family: f.$raleway;
+    font-weight: 700;
+}
+
+.box{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: c.$light-grey-color;
+}
+.site-description p:first-of-type{
+    font-family: f.$raleway;
+    font-size: f.$font-medium;
+    font-weight: 700;
+}
+
+
+article h4{
+    font-family: f.$raleway;
+    font-size: f.$font-small;
+    margin-left:10px;
+    font-weight: 700;
+}

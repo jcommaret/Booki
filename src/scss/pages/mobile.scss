@@ -1,13 +1,11 @@
+
+@use "../utils/colors" as c;
+@use "../utils/fonts" as f;
+@use "../utils/breakpoints" as b;
+@use "../utils/mixins" as m;
+
 .wrapper{
     all:unset;
-}
-
-:root{
-    --font-xsmall: 12px;
-    --font-small: 14px;
-    --font-normal: 16px;
-    --font-medium: 19px;
-    --font-large: 24px;
 }
 
 .off-mobile{
@@ -47,7 +45,7 @@ header .navbar .menu {
 
 header .navbar .menu li {
     width: calc(100%/2);
-    font-size: var(--font-small);
+    font-size: f.$font-small;
 }
 
 header .navbar .menu a{
@@ -56,7 +54,7 @@ header .navbar .menu a{
     text-align: center;
     display: block;
     line-height: 48px;
-    border-bottom:2px solid var(--light-grey-color);
+    border-bottom:2px solid c.$light-grey-color;
 }
 header .navbar .menu a:hover{
     border-top:initial;
@@ -64,9 +62,7 @@ header .navbar .menu a:hover{
 
 header .navbar .menu a:active{
     border-top:initial;
-    border-bottom:2px solid var(--dark-blue-color);
-    color:var(--dark-blue-color);
-}
+    border-bottom:2px solid c.$dark-blue-color;    color:c.$dark-blue-color;}
 
 header .affinity{
     padding:17px;
@@ -74,17 +70,17 @@ header .affinity{
 
 header .affinity .site-description p:first-of-type{
     margin-top: 7px;
-    font-size: var(--font-medium);
+    font-size: f.$font-medium;
 }
 
 header .affinity .site-description :last-child{
-    font-size: var(--font-small);
+    font-size: f.$font-small;
     margin-top:15px;
 }
 
 header.affinity .search form{
     margin-top: 30px;
-    font-family: var(--fonts-raleway-bold);
+    font-family: f.$raleway;
     font-weight: 700;
     display: flex;
 }
@@ -97,20 +93,19 @@ header .affinity .search i{
 }
 
 header .affinity .search i.fa-map-marker-alt{
-    background-color: var(--light-grey-color);
+    background-color: c.$light-grey-color;
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
 }
 
 header .affinity .search i.fa-search{
-    color:var(--plain-white-color);
+    color:c.$plain-white-color;
     border-radius:15px;
-    background-color: var(--dark-blue-color);
-}
+    background-color: c.$dark-blue-color;}
 
 header .affinity .search .input-field{
-    font-size: var(--font-normal);
-    border:2px solid var(--light-grey-color);
+    font-size: f.$font-normal;
+    border:2px solid c.$light-grey-color;
     padding-left: 15px;
     width: 100%;
 }
@@ -154,8 +149,9 @@ header .affinity .filters li i{
     margin-top: -2px;
     margin-left: -2px;
     margin-right: 5px;
-    color:var(--dark-blue-color);
-    background-color: var(--light-blue-color);
+    color:c.$dark-blue-color;    
+    background-color: 
+    c.$light-blue-color;
     border-radius: 50px;
 }
 
@@ -163,9 +159,9 @@ header .affinity .filters li{
     display: flex;
     border-radius: 50px;
     border:2px solid #d8d8d8;
-    font-family: var(--fonts-raleway-bold);
+    font-family: f.$raleway;
     font-weight: 700;
-    font-size: var(--font-small);
+    font-size: f.$font-small;
     text-align: center;
     height:42px;
     padding-right: 10px;
@@ -178,13 +174,13 @@ header .affinity .filters li p{
 
 header .affinity .search-results{
     display: flex;
-    font-size: var(--font-small);
+    font-size: f.$font-small;
     margin-top:35px;
 }
 
 header .affinity .search-results i.fa-solid.fa-info{
-    color:var(--dark-blue-color);
-    border:1px solid var(--middle-grey-color);
+    color:c.$dark-blue-color;    
+    border:1px solid c.$middle-gray-color;
     border-radius: 30px;
     width: 20px;
     height: 20px;
@@ -193,7 +189,7 @@ header .affinity .search-results i.fa-solid.fa-info{
     padding-right: 5px;
     padding-top: 3px;
     padding-bottom: 2px;
-    font-size: var(--font-xsmall);
+    font-size: f.$font-xsmall;
 }
 
 main {
@@ -262,7 +258,7 @@ main .popular article .description{
     height: 195px;
     display: flex;
     flex-direction: column;
-    font-size: var(--font-xsmall);
+    font-size: f.$font-xsmall;
     justify-content: space-between;
 }
 
@@ -276,7 +272,7 @@ main .hosting{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: var(--font-xsmall);
+    font-size: f.$font-xsmall;
     gap:10px;
     margin-bottom: initial;
 }
@@ -293,7 +289,7 @@ main .hosting a article .description{
     height: 40px;
     display: flex;
     flex-direction: column;
-    font-size: var(--font-xsmall);
+    font-size: f.$font-xsmall;
     justify-content: space-between;
     padding-bottom: 5px;
     margin-left: 10px;
@@ -312,13 +308,13 @@ main .hebergement{
 }
 
 main .hebergement.box{
-    background-color: var(--plain-white-color);
+    background-color: c.$plain-white-color;
     margin-top: 15px;
 }
 
 main .hebergement .see-more{
     margin-top:40px;
-    font-family: var(--fonts-raleway-bold);
+    font-family: f.$raleway;
     font-weight: 700;
 }
 
@@ -409,7 +405,7 @@ footer{
     flex-direction: column;
     padding: 20px;
     margin-top: initial;
-    background-color: var(--light-grey-color);
+    background-color: c.$light-grey-color;
 }
 footer .inner-foot{
     display: initial;
@@ -425,13 +421,13 @@ footer .column-foot{
 }
 
 footer h3{
-    font-size: var(--font-small);
+    font-size: f.$font-small;
 }
 
 footer ul{
     margin-top: 10px;
     margin-bottom:15px;
-    font-size: var(--font-xsmall);
+    font-size: f.$font-xsmall;
 }
 footer ul li {
     line-height: 25px;

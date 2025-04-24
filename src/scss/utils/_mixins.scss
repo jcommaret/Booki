@@ -1,0 +1,16 @@
+@use "colors" as c;
+@use "breakpoints" as b;
+@use "sass:map";
+@use "sass:color";
+
+@mixin mobile {
+     @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  
+@mixin tablet {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+}

@@ -2,8 +2,8 @@
 import { imageMap } from './assets/images/images';
 import content from './assets/data/content.json';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/header';
+import Footer from './components/footer';
 import Article from './components/Article';
 
 import { ContentSection } from './types/articles';
