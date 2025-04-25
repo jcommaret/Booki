@@ -1,16 +1,15 @@
 @use "colors" as c;
 @use "breakpoints" as b;
-@use "sass:map";
-@use "sass:color";
+
 
 @mixin mobile {
-     @media screen and (max-width: 767px) {
+     @media screen and (max-width: b.$tablet) {
       @content;
     }
   }
   
 @mixin tablet {
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: b.$desktop) {
       @content;
     }
 }

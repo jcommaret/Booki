@@ -11,10 +11,6 @@ import { ContentSection } from './types/articles';
 function App() {
   const typedContent = content as ContentSection[];
 
-  console.log('Hébergements items:', typedContent[0].items);
-  console.log('Premier hébergement:', typedContent[0].items[0]);
-  console.log('Image du premier hébergement:', imageMap[typedContent[0].items[0].image]);
-
   return (
     <div className="wrapper">
         <Header />
