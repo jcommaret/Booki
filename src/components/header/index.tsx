@@ -1,5 +1,7 @@
 import { logo } from '../../assets/images/images'
 
+import "./index.scss";
+
 export function Header() {
     return (
         <header>

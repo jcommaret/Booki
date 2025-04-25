@@ -1,0 +1,59 @@
+@use "../../scss/utils/colors" as c;
+@use "../../scss/utils/fonts" as f;
+@use "../../scss/utils/mixins" as m;
+
+footer{
+    margin-top:60px;
+    padding-top:45px;
+    padding-left:75px;
+    padding-right: 75px;
+    padding-bottom: 45px;
+    background-color: c.$light-grey-color;
+    .inner-foot{
+        display: flex;
+        gap:300px;
+        @include m.tablet{
+            gap:70px;
+            font-size:f.$font-xsmall;
+        }
+    }
+    .column-foot{
+        h3{
+            margin-bottom: 20px;
+        }
+    }
+    li{
+        line-height:30px;
+    }
+    @include m.mobile{
+        footer{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-top: initial;
+            background-color: c.$light-grey-color;
+        }
+        
+        footer .inner-foot{
+            display: initial;
+        }
+        
+        footer .column-foot{
+            margin-top: initial;
+            margin-right: initial;
+        }
+    
+        footer h3{
+            font-size: f.$font-small;
+        }
+        
+        footer ul{
+            margin-top: 10px;
+            margin-bottom:15px;
+            font-size: f.$font-xsmall;
+        }
+        footer ul li {
+            line-height: 25px;
+        }
+    }
+}

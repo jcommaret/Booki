@@ -1,0 +1,491 @@
+@use "../../scss/utils/colors" as c;
+@use "../../scss/utils/fonts" as f;
+@use "../../scss/utils/mixins" as m;
+
+header{
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include m.tablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: initial;
+        }
+        @include m.mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: initial;
+        }     
+        .logo {
+            margin-top: 15px;
+            margin-left: 70px;
+            @include m.tablet{
+                height:65px;
+                margin-top: initial;
+                margin-left:initial;
+            }
+            @include m.mobile{
+                height:65px;
+                margin-top: initial;
+                margin-left:initial;
+            }
+            img {
+                margin-top: 25px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width:50px;
+                @include m.tablet{
+                    margin-top: 25px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width:50px;
+                }
+                @include m.mobile{
+                    margin-top: 25px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width:50px;
+                }
+            }
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            @include m.tablet{
+                display: flex;    
+                align-items: center;
+                justify-content: center;           
+                li {
+                    width: calc(100%/2);
+                    font-size: f.$font-small;
+                }
+            }
+            @include m.mobile{
+                display: flex;    
+                align-items: center;
+                justify-content: center;
+                li {
+                    width: calc(100%/2);
+                    font-size: f.$font-small;
+                }        
+            }
+            a{
+                width: 175px;
+                height: 120px;
+                text-align: center;
+                display: block;
+                line-height: 115px;
+                @include m.tablet{
+                    width: initial;
+                    height: 48px;
+                    text-align: center;
+                    display: block;
+                    line-height: 48px;
+                    border-bottom:2px solid c.$light-grey-color;
+                    &:hover{
+                        border-top:initial;
+                    }
+                    &:active{
+                        border-top:initial;
+                        border-bottom:2px solid c.$dark-blue-color;    
+                        color:c.$dark-blue-color;
+                    }    
+                }
+                @include m.mobile{
+                    width: initial;
+                    height: 48px;
+                    text-align: center;
+                    display: block;
+                    line-height: 48px;
+                    border-bottom:2px solid c.$light-grey-color;
+                    &:hover{
+                        border-top:initial;
+                    }
+                    &:active{
+                        border-top:initial;
+                        border-bottom:2px solid c.$dark-blue-color;    
+                        color:c.$dark-blue-color;}
+                    }
+                }
+            }
+            
+        }
+        ul li a{
+            &:hover{
+                border-top:2px solid c.$dark-blue-color;
+                color:c.$dark-blue-color;
+            }
+            &:active{
+                border-top:2px solid c.$dark-blue-color;
+                color:c.$dark-blue-color;
+            }
+    
+        }
+    }
+    .affinity{
+        padding-left: 55px;
+        @include m.tablet{
+            padding:17px;
+        }
+        @include m.mobile{
+            padding:17px;
+        }
+        .site-description{
+            p:first-of-type{
+                margin-top: 7px;
+                font-size: f.$font-medium;
+                @include m.tablet{
+                    margin-top: 7px;
+                    font-size: f.$font-medium;     
+                }
+                @include m.mobile{
+                    margin-top: 7px;
+                    font-size: f.$font-medium;
+                }
+            }
+            :last-child{
+                font-size: f.$font-small;
+                margin-top:10px; 
+                @include m.tablet{
+                    font-size: f.$font-small;
+                    margin-top:15px;
+                }
+                @include m.mobile{
+                    font-size: f.$font-small;
+                    margin-top:15px;
+                }
+            }
+        }
+        .search{
+            form{
+                margin-top: 15px;
+                font-family: f.$raleway;
+                display: flex;
+                font-weight: 700;
+                width: 390px;
+                @include m.tablet{
+                    margin-top: 30px;
+                    font-family: f.$raleway;
+                    font-weight: 700;
+                    display: flex;
+                }
+                @include m.mobile{
+                    margin-top: 30px;
+                    font-family: f.$raleway;
+                    font-weight: 700;
+                    display: flex;
+                }
+            }
+            i{
+                padding-top:20px;
+                padding-bottom: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
+                @include m.tablet{
+                        padding-top:13px;
+                        padding-bottom: 13px;
+                        padding-left: 15px;
+                        padding-right: 15px;    
+                }
+                @include m.mobile{
+                    padding-top:13px;
+                    padding-bottom: 13px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                &.fa-map-marker-alt{
+                    background-color: c.$light-grey-color;
+                    border-top-left-radius:15px;
+                    border-bottom-left-radius:15px;
+                    @include m.tablet{
+                        background-color: c.$light-grey-color;
+                        border-top-left-radius:15px;
+                        border-bottom-left-radius:15px;
+                    }
+                    @include m.mobile{
+                        background-color: c.$light-grey-color;
+                        border-top-left-radius:15px;
+                        border-bottom-left-radius:15px;
+                    }
+                }
+                &.fa-search{
+                    background-color: c.$dark-blue-color;
+                    border-top-right-radius:15px;
+                    border-bottom-right-radius:15px;
+                    color: c.$plain-white-color;
+                    @include m.tablet{
+                        color:c.$plain-white-color;
+                        border-radius:15px;
+                        background-color: c.$dark-blue-color;
+                    }
+                    @include m.mobile{
+                        color:c.$plain-white-color;
+                        border-radius:15px;
+                        background-color: c.$dark-blue-color;}            
+                    }
+                }
+            }
+            input{
+                border: none;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                width: 100%;
+                font-size: f.$font-medium;
+                font-family: f.$raleway;
+                font-weight: 700;
+                &:focus{
+                    outline: none;
+                }
+                &-field{
+                    font-size: f.$font-medium;
+                    border:2px solid c.$light-grey-color;
+                    padding-left: 25px;
+                    width: 265px;
+                    @include m.tablet{
+                        font-size: f.$font-normal;
+                        border:2px solid c.$light-grey-color;
+                        padding-left: 15px;
+                        width: 100%;
+                    }
+                    @include m.mobile{
+                        font-size: f.$font-normal;
+                        border:2px solid c.$light-grey-color;
+                        padding-left: 15px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .submit-bt{
+            margin-left: -20px;
+            background-color: c.$dark-blue-color;
+            color:c.$plain-white-color;
+            padding-left:20px;
+            padding-right:20px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            cursor: pointer;
+            &:hover{
+                background-color: c.$plain-white-color;
+                color:c.$dark-blue-color;
+                border : 1px solid c.$dark-blue-color;
+                
+            }
+            @include m.tablet{
+                margin-left: -20px;
+                background-color: initial;
+                color: initial;
+                padding-left: initial;
+                padding-right: initial;
+                border-top-right-radius: initial;
+                border-bottom-right-radius: initial;
+            }
+            @include m.mobile{
+                margin-left: -20px;
+                background-color: initial;
+                color: initial;
+                padding-left: initial;
+                padding-right: initial;
+                border-top-right-radius: initial;
+                border-bottom-right-radius: initial;
+                &:hover{
+                    background-color: initial;
+                    color:initial;
+                    border : initial;     
+                }
+            }
+        }
+        .filters{
+            display: flex;
+            height:50px;
+            margin-top: 25px;
+            @include m.tablet{
+                margin-top: 30px;
+                display:initial;
+                height: initial;
+            }
+            @include m.mobile{
+                margin-top: 30px;
+                display: initial;
+                height: initial;
+            }
+            h3{
+                line-height: 50px;
+                margin-left: 5px;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                gap:10px;
+                margin-left: 45px;
+                @include m.tablet{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap:10px;
+                    margin-left: 0px;
+                }
+                @include m.mobile{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap:10px;
+                    margin-top: 10px;
+                    margin-left: 0px;
+                    margin-bottom: 15px;
+                }
+            }
+            li{
+                display: flex;
+                border-radius: 50px;
+                border:2px solid #d8d8d8;
+                font-family: f.$raleway;
+                font-size: f.$font-small;
+                text-align: center;
+                height:50px;
+                padding-right: 20px;
+                font-weight: 700;
+                @include m.tablet{
+                    display: flex;
+                    border-radius: 50px;
+                    border:2px solid #d8d8d8;
+                    font-family: f.$raleway;
+                    font-weight: 700;
+                    font-size: f.$font-small;
+                    text-align: center;
+                    height:42px;
+                    padding-right: 10px;
+                }
+                @include m.mobile{
+                    display: flex;
+                    border-radius: 50px;
+                    border:2px solid #d8d8d8;
+                    font-family: f.$raleway;
+                    font-weight: 700;
+                    font-size: f.$font-small;
+                    text-align: center;
+                    height:42px;
+                    padding-right: 10px;
+                }
+                &:hover{
+                    cursor:pointer;
+                    border:2px solid c.$light-blue-color;
+                    color:c.$dark-blue-color;    
+                    background-color: c.$light-blue-color;
+                    i{
+                        color:c.$light-blue-color;
+                        background-color: c.$dark-blue-color;
+                    }
+                }
+                i{
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    margin-top: -2px;
+                    margin-left: -2px;
+                    margin-right: 5px;
+                    color:c.$dark-blue-color;
+                    background-color: c.$light-blue-color;
+                    border-radius: 50px;
+                    @include m.tablet{
+                        height: 42px;
+                        width: 42px;
+                        line-height: 42px;
+                        margin-top: -2px;
+                        margin-left: -2px;
+                        margin-right: 5px;
+                        color:c.$dark-blue-color;    
+                        background-color: 
+                        c.$light-blue-color;
+                        border-radius: 50px;
+                    }
+                    @include m.mobile{
+                        height: 42px;
+                        width: 42px;
+                        line-height: 42px;
+                        margin-top: -2px;
+                        margin-left: -2px;
+                        margin-right: 5px;
+                        color:c.$dark-blue-color;    
+                        background-color: 
+                        c.$light-blue-color;
+                        border-radius: 50px;
+                    }
+                }
+                p{
+                    padding-top:12px;
+                    padding-left: 4px;
+                    @include m.tablet{
+                        padding-top: 12px;
+                        padding-left: 4px;
+                    }
+                    @include m.mobile{
+                        padding-top:12px;
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+        .search-results{
+            display: flex;
+            font-size: f.$font-small;
+            margin-top:35px;
+            @include m.tablet{
+                display: flex;
+                font-size: f.$font-small;
+                margin-top:35px;
+            }
+            @include m.mobile{
+                display: flex;
+                font-size: f.$font-small;
+                margin-top:35px;
+            }
+            i.fa-solid.fa-info{
+                color:c.$dark-blue-color;    
+                border:1px solid c.$middle-grey-color;
+                border-radius: 30px;
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                padding-left:10px;
+                padding-right: 5px;
+                padding-top: 3px;
+                padding-bottom: 2px;
+                font-size: f.$font-xsmall;
+                @include m.tablet{
+                    color:c.$dark-blue-color;    
+                    border:1px solid c.$middle-grey-color;
+                    border-radius: 30px;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    padding-left:6px;
+                    padding-right: 5px;
+                    padding-top: 3px;
+                    padding-bottom: 2px;
+                    font-size: f.$font-xsmall;
+                }
+                @include m.mobile{
+                    color:c.$dark-blue-color;    
+                    border:1px solid c.$middle-grey-color;
+                    border-radius: 30px;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    padding-left:6px;
+                    padding-right: 5px;
+                    padding-top: 3px;
+                    padding-bottom: 2px;
+                    font-size: f.$font-xsmall;
+                }
+            }
+            p{
+                margin-top:5px;
+            }
+        }
