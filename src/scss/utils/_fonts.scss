@@ -8,3 +8,12 @@ $font-small: 18px;
 $font-normal: 16px;
 $font-medium: 20px;
 $font-large: 24px;
+
+$font-bold : 700;
+$font-regular : 400;
+
+body {
+    font-family: $raleway;
+    font-size: $font-normal;
+    font-weight: $font-regular;
+}

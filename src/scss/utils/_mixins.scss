@@ -1,5 +1,6 @@
 @use "colors" as c;
 @use "breakpoints" as b;
+@use "fonts" as f;
 
 
 @mixin mobile {
@@ -12,4 +13,12 @@
     @media screen and (max-width: b.$desktop) {
       @content;
     }
+}
+
+@mixin fontNormal {
+  font-weight: f.$font-regular;
+}
+
+@mixin fontBold {
+  font-weight: f.$font-bold;
 }
