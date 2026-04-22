@@ -1,11 +1,13 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-oxc'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   base: '/Booki/',
   optimizeDeps: {
-    include: ['@fontsource/raleway']
+    rolldownOptions: {
+      include: ['@fontsource/raleway']
+    }
   }
 })
