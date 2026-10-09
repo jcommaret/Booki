@@ -1,29 +1,28 @@
-@use "../utils/colors" as c;
-@use "../utils/fonts" as f;
-@use "../utils/mixins" as m;
+@use '../utils/colors' as c;
+@use '../utils/fonts' as f;
+@use '../utils/mixins' as m;
 
-
-@include m.mobile{
-.wrapper{
-        all:unset;
-    }   
+@include m.mobile {
+  .wrapper {
+    all: unset;
+  }
 }
 
-.off-desktop{
+.off-desktop {
+  display: none;
+  @include m.tablet {
+    display: initial;
+  }
+  @include m.mobile {
+    display: initial;
+  }
+}
+
+.off-mobile {
+  @include m.tablet {
     display: none;
-    @include m.tablet{
-        display: initial;
-    }
-    @include m.mobile{
-        display: initial;
-    }  
-}
-
-.off-mobile{
-    @include m.tablet{
-        display: none;
-    }
-    @include m.mobile{
-        display: none;
-    }
+  }
+  @include m.mobile {
+    display: none;
+  }
 }
