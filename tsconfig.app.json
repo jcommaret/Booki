@@ -20,7 +20,7 @@
       "@components/*": ["./src/components/*"],
       "@assets/*": ["./src/assets/*"],
       "@styles/*": ["./src/scss/*"],
-      "@types/*": ["./src/types/*"]
+      "@app-types/*": ["./src/types/*"]
     },
 
     /* Strict mode */
